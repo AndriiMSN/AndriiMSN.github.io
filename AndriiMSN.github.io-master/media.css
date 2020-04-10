@@ -1,0 +1,797 @@
+@media only screen and (max-width:900px){
+    
+    
+     
+    
+    
+    body {
+        background: rgb(255, 255, 255);
+    }
+    
+    /*MENU*/
+    
+    header {
+        padding: 0px 0px;
+        background:white;
+       z-index: 999;
+    }
+    
+    .img1{
+        
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        }
+        
+        .menu [type="checkbox"]{
+            display: none;
+           }    
+
+
+  .togglemenu i {
+      color:white;
+      margin-right: 10px;
+      font-size: 30px;
+  }
+
+   .togglemenu {
+      display: block;
+      background:lightseagreen;
+      color: white;
+      text-align: left;
+      padding: 10px;
+      font-size: 25px;
+      cursor: pointer;
+      position: relative;
+
+  }
+
+  .menu ul{
+      display: none;
+      
+  }
+
+  input.togglemenu:checked ~ ul{
+    display: block;
+    z-index: 9999;
+    
+   }    
+
+  input.togglemenu:checked + label.togglemenu{
+    background:black;
+    color: white;
+    
+   }    
+    
+ .togglesubmenu {
+     display: block;
+     background: rgb(0, 0, 0);
+     padding: 0px;
+     margin: 0px;
+     position: relative;
+}
+ 
+.togglesubmenu1 {
+    display: block;
+    background: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+
+.togglesubmenu div {
+    display: none;
+}
+
+.togglesubmenu1 div {
+    display: none;
+}
+
+input.togglesubmenu:checked ~ .togglesubmenu div {
+    display: block;
+   padding: 0px;
+   position: relative;
+   margin: 0px;
+   }
+
+   input.togglesubmenu1:checked ~ .togglesubmenu1 div {
+    display: block;
+   padding: 0px;
+   position: relative;
+   margin: 0px;
+   }
+
+input.togglesubmenu:checked + label.togglesubmenu{
+    background:rgb(61, 38, 190);
+    color: white;
+    margin-top: -5px;transition: 0.5s;margin-bottom: -5px;
+   }    
+
+   input.togglesubmenu1:checked + label.togglesubmenu1{
+    background:rgb(61, 38, 190);
+    color: white;
+    margin-top: -5px;
+    transition: 0.5s;
+    margin-bottom: -5px;
+   }    
+   
+
+    
+    
+    .menu {
+        margin: 0px;
+        padding-left: 0px;
+        text-align: none;
+        font-family: 'Ubuntu', sans-serif;
+        margin-right: 0px;
+        
+        }
+
+        
+    
+    .menu ul , ol {
+        list-style: none;
+    }
+    
+    .menu ul > li {
+        display: block;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 0px;
+        text-align: left;
+        font-size: 30px;
+        padding: 5px 0px;
+        background: black;
+        }
+    
+        .menu a {
+            text-decoration: none;
+            color:white
+        }
+    
+        .fas {
+        color:white;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .menu li a:hover{
+        color: lightsalmon;
+    }
+    
+    .menu  li a:hover .fas {
+        color:pink;
+        transition:1.5s;
+    }
+
+    
+
+        .lastli i{
+            color: pink;
+            font-size: 30px;
+            margin-right: 20px;
+            padding: 0px;
+        }
+
+        
+  .submenu1 ul{
+      display: none;
+  }
+
+  .submenu1 ul li ,
+  .submenu ul li{
+      text-align: center;
+      background: purple;
+      margin-top: 2px;
+      
+  }
+
+  .togglesubmenu i{
+      color: rgb(253, 253, 253);
+      position: relative;
+      margin-top: 3px;
+      
+      
+      
+      
+  }
+
+  .togglesubmenu i:last-child{
+      color:yellow;
+      position: relative;
+      margin-left: 5px;
+      left: 0;
+      right: 0;
+      
+  }
+
+  .submenu1 i{
+    color:transparent;
+    margin-right: 5px;
+    position: relative;
+  }
+
+  .togglesubmenu1 i{
+    color: rgb(253, 253, 253);
+    position: relative;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.togglesubmenu1 i:last-child{
+    color:lightsalmon;
+    position: relative;
+    margin-left: 5px;
+    left: 0;
+    right: 0;
+}
+
+.submenu i{
+  color:transparent;
+  margin-right: 5px;
+  position: relative;
+}
+  
+.submenu ul{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.submenu1 ul{
+    border: none !important;
+    padding: 0 !important;
+}
+
+/*MAIN*/
+/*Main*/
+
+
+.top-panel {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 100%;
+    margin-left: 0%;
+    height: 250px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: top 1000ms cubic-bezier(0.17,0.04,0.03,0.94);
+    height: 300px;
+    border-radius: 50px;
+  }
+  /* Блок сообщения */
+  .message {
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 980px
+  }
+  /* Заголовок 1 уровня */
+  .message h1 {
+    color: rgb(0, 0, 0);
+  }
+  /* Заголовок 2 уровня */
+  .message h2 {
+    color: #888
+  }
+  .message p {
+    margin: 1em 0
+  }
+  .message a {
+    text-decoration: none;
+    color: #748b74
+  }
+  .message a:hover {
+    color: #95984b
+  }
+  
+  .message ul{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 25px;
+    color:black;
+  }
+  
+  .message li{
+    margin: 10px;
+  }
+  
+  .message i{
+    color: black;
+  }
+  
+  .message img{
+      display: none;
+  }
+  
+  
+  /* Переключатель панели */
+  label.btn {
+    display: none;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    right: 50px;
+    top: 0px;
+    cursor: pointer;
+    background: #2bbbad;
+    width: 50%;
+    border-radius: 0 5px 5px 0px;
+    padding: 0px 0px;
+    color: #FFF;
+    line-height: 0px;
+    font-size: 12px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  z-index: 2;
+  
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+  /* Переключатель при наведении */
+  label.btn:hover {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
+  }
+  /* Стрелка переключателя вниз */
+  label.btn:after {
+    content: '\f078';
+    
+    font: normal 24px/1 FontAwesome;
+    text-decoration: inherit
+  }
+  /* Активация панели */
+  .open:checked ~ .top-panel {
+    top:320px
+  }
+  
+  .open:checked ~ label.btn {
+    padding: 0;
+    margin-left: 25%;
+  }
+  /* Смещение контейнера контента страницы */
+  .open:checked ~ .container {
+    margin-top: 300px
+  }
+  /* Цвет переключателя при клике */
+  .open:checked + label.btn {
+    background: #dd6149
+  }
+  /* Стрелка переключателя вверх*/
+  .open:checked + label.btn:after {
+    content: '\f077';
+    z-index: -1;
+    font: normal 24px/1 FontAwesome
+  }
+  /* Контейнер контента */
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    transition: margin 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+    padding: 5em 3em;
+  }
+  
+  
+  .info{
+   text-align: center;
+  }
+  
+  .instagram {
+    position: relative;
+    background: #77e8aa;
+    border-radius: 165px;
+    width: 350px;
+    margin-left: 10%;
+    margin-top: -250px;
+   
+    
+  }
+  
+  .instagram_foto{
+    width: 70%;
+    position: relative;
+    margin-top:25px;
+    margin-bottom: 50px;
+    margin-left: 1%;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+  }
+  
+  @keyframes rotation {
+    0% {
+        transform:scale(1);
+    }
+    49% {
+        transform:scale(1.1);
+    }
+    50% {
+      transform:scale(1.1);
+  }
+  100% {
+      transform:scale(1);
+  }
+  }
+  
+  .information {
+    display: block;
+    max-width: 1361px;
+    height: 600px;
+    text-align: center;
+    background: url(img/french-bulldog-smart.jpg) no-repeat ;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    
+  }
+  
+  .btn3 {
+    color: black;
+    font-size: 2.5em;
+    text-decoration: none;
+    
+    background: linear-gradient(top, #EE3D8C, #b7d412);
+    background: -webkit-linear-gradient(top,  #EE3D8C, #b7d412);
+    padding: 21px 0px;
+    border-radius: 150px;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 270px;
+    margin-right: 0px;
+    box-shadow: 0px 8px 5px 0px rgb(85, 1, 74);
+    
+  }
+  
+  #x a:hover  {
+    background: linear-gradient(bottom,   #d407a1, #b7d412);
+    background: -webkit-linear-gradient(bottom,  #d407a1, #b7d412);
+    
+  }
+  
+  #x img{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: -8px;
+    width: 60px;
+    
+  }
+  
+  
+  .shop_zag{
+    padding-top: 0px;
+    font-size: 75px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+  }
+  
+  
+  .shop_zag p{
+    background: rgb(0, 0, 0, 0.7);padding: 20px 0;
+  }
+  
+  .zag {
+    text-align: center;
+    margin-top: 30px;
+  }
+.reverse div:nth-child(5) {
+    display: none;
+}
+
+  main{
+      display: block;
+  }
+
+  .swiper-container {
+    width: 90%;
+    height: 300px;
+   margin: 0px 10%;
+   
+  }
+
+  .swiper-container a{
+      color: black;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 20px;
+    background:whitesmoke;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+  
+.zag{
+    display: none;
+}
+  
+
+main{
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*NEWPROD*/
+.newprod {
+  
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 0px;
+  position: relative;
+  margin-right: 0px;
+  max-width: 90%;
+
+    display: none;
+     
+}
+
+.newprod h2{
+  text-align: center;
+  background: pink;
+  padding: 10px;
+  margin: 0px 10px;
+  
+}
+    
+.item1 {
+    min-width: 100px;
+    min-height: 250px;
+    text-align: center;
+    background: url(img/toy1.jpg) no-repeat bottom;
+    
+    display: inline-block;
+    background-size: 200px 180px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 20px;
+    
+}
+
+.item1:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    color: #fff}
+
+    .item2 {
+        min-width: 100px;
+        min-height: 250px;
+        text-align: center;
+        background: url(img/padigre.jpg) no-repeat bottom;
+        
+        display: inline-block;
+        background-size: 200px 180px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        padding-top: 20px;
+        
+    }
+    
+    .item2:hover {
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        color: #fff;
+    }
+
+        .item3 {
+            min-width: 100px;
+            min-height: 250px;
+            text-align: center;
+            background: url(img/1463_suhoy-korm-dlya-sobak-royal-canin-french-bulldog-puppy.png) no-repeat bottom;
+            display: inline-block;
+            background-size: 200px 180px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            padding-top: 20px;
+            
+        }
+        
+        .item3:hover {
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .img3,
+        .img4{
+                max-width: 90%;
+                object-fit: cover;
+        }
+
+
+        /*TIMER*/
+        .reverse{
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        
+        }
+        
+        
+        .time-text{
+        
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        margin: 16px 0 0;
+        
+        }
+        
+        .time-block{
+        padding: 10px 0px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-right: 10px;
+        width: 80px;
+        height: 70px;
+        font-size: 24px;
+        }
+        
+        .sale{
+            font-size: 20px;
+        }
+        #allnews {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            text-align: center;
+            width: 80%;
+           margin-left: 10%;
+          }
+          
+          #news h1{
+            text-align: center;
+            margin: 20px 0;
+            background: blueviolet;
+            line-height: 50px;
+            font-size: 35px;
+           }
+           
+           #allnews h1{
+             background: grey;
+             font-size: 30px;
+             text-align: center !important;
+             width: 100% !important;
+           }
+           
+           #allnews p{
+             font-size: 20px;
+           }
+           
+           #allnews button{
+             margin: 30px;
+             line-height: 50px;
+             font-size: 20px;
+             background-color: cadetblue;
+             font-family: "Ubuntu", sans-serif;
+             padding: 0px 20px;
+             border-radius: 50px;
+             border: none;
+             outline: none;
+             cursor: pointer;
+           }
+           
+           #allnews button:hover{
+             background: chartreuse;
+           } 
+           
+           #more {
+             text-align: center;
+             width: 30%;
+             margin-left: 35%;
+             line-height: 50px;
+             margin-bottom: 20px;
+             background: linear-gradient(bottom,   #6932c2, #3f007a);
+             background: -webkit-linear-gradient(bottom,  #6932c2, #3f007a);
+             border: none;
+             border-radius: 50px;
+             outline: none;
+             cursor: pointer;
+             font-family: "Ubuntu", sans-serif;
+             font-size: 30px;
+             color: coral;
+             box-shadow: 0px 2px 5px 2px black;
+           }
+           
+           #more:hover{
+             background: linear-gradient(top,   #6932c2, #3f007a);
+             background: -webkit-linear-gradient(top,  #6932c2, #3f007a);
+           }
+          
+          #allnews div{
+          display: none;
+          width: 100%;
+          text-align: center;
+          }
+
+        #all_tovary{
+  
+            margin-bottom: 20px;
+            background: linear-gradient(bottom,   #068b39, #011d0c);
+            background: -webkit-linear-gradient(bottom,  #068b39, #011d0c);
+            border: none;
+            line-height: 40px;
+            text-decoration: none;
+            font-size: 24px;
+            color: beige;
+            border-radius: 50px;
+            padding: 10px 40px;
+           margin-left: 20%;
+          }
+          
+
+        /*Footer*/
+.footer{
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer li{
+    display: block;
+    
+}
+
+.footer li:nth-child(3),
+.footer li:nth-child(4),
+.footer li:nth-child(5),
+.footer li:nth-child(7),
+.footer li:nth-child(8),
+.footer li:nth-child(9){
+    display: none;
+}
+
+.footerlastli {
+    padding: 0px 0px;
+    margin-left: 5px;
+}
+
+.footerlastli i{
+    margin-right: 5px;
+    font-size: 20px;
+    
+}
+
+
+   
+
+}
+
+
+

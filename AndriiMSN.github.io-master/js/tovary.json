@@ -1,0 +1,38 @@
+{
+    "tovar": [{
+        "name" : "tov1",
+        "price": 499.99,
+        "image" : "../img/tsh1.jpg"
+    }, {
+        "name" : "tov2",
+        "price": 299.99,
+        
+        "image" : "../img/tsh2.jpg"
+    }, {
+        "name" : "tov3",
+        "price": 99.99,
+        
+        "image" : "../img/Tsh3jpg.jpg"
+    },
+    {
+        "name" : "tov1",
+        "price": 159.99,
+        "image" : "../img/tsh1.jpg"
+    },
+
+{
+        "name" : "tov1",
+        "price": 136.99,
+        "image" : "../img/tsh1.jpg"
+    }
+],
+   "course": [
+        { "ccy": "₴", "base_ccy": "UAH", "buy": "1", "sale": "24.57002" },
+        { "ccy": "$", "base_ccy": "UAH", "buy": "24.3", "sale": "24.57002" },
+      { "ccy": "€", "base_ccy": "UAH", "buy": "26.25", "sale": "26.66667" },
+      { "ccy": "₽", "base_ccy": "UAH", "buy": "0.345", "sale": "0.38001" },
+      { "ccy": "BTC", "base_ccy": "USD", "buy": "9109.8951", "sale": "10068.8315" }
+    ]
+    
+
+}

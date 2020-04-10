@@ -1,0 +1,359 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif ;
+    
+}
+
+ 
+
+
+
+body {
+    background: whitesmoke ;
+}
+
+/*Меню*/
+
+header {
+    padding: 0px;
+    margin: 0px;
+    background: black;
+    
+    
+}
+
+.img1{
+    margin-right: 0px;
+    margin-left: 130px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+
+
+
+
+.menu [type="checkbox"]{
+    display: none;
+   }    
+
+
+
+
+.menu {
+    margin: 0px;
+    padding-left: 250px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 0px;
+    position: relative;
+    
+    }
+
+.menu ul , ol {
+    list-style: none;
+}
+
+.menu ul > li {
+    display: inline-flex;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding-right: 10px;
+    }
+    
+    
+    
+    
+
+    .lastli {
+        margin: 0px;
+        padding: 0px;
+        
+        }
+
+        .lastli a{
+            margin-top: 3px;
+        }
+
+    .lastli i{
+        color: pink;
+        margin-right: 5px;
+        margin-left: 20px;
+        font-size: 23px;
+        margin-top: 2px;
+       
+    }
+    
+
+    .menu a {
+        text-decoration: none;
+        color:white;
+
+    }
+
+    .fas {
+    color:transparent;
+    margin-right: 5px;
+}
+
+.menu li a:hover{
+    color: lightsalmon;
+}
+
+.menu  li a:hover .fas {
+    color: white;
+    transition:1.5s;
+}
+
+
+
+.submenu {
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 0px;
+
+}
+
+.submenu ul{
+    
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    display: none;
+   
+    
+}
+
+.submenu ul li{
+    
+    margin-top: 0px;
+    font-size: 20px;
+    
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 0px;display: block;
+}
+
+.submenu ul > li{
+    
+    padding: 0px;
+}
+
+.menu li:hover .submenu ul{
+    display: block;
+}
+
+
+
+
+
+
+
+.submenu1 {
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    
+}
+
+.submenu1 ul{
+    
+    position: relative;
+    margin-top: 0px;
+    display: none;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+}
+
+.submenu1 ul li{
+    
+    margin-top: 0px;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 0px;display: block;
+    
+}
+
+.submenu1 ul > li{
+    
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.menu li:hover .submenu1 ul{
+    display: block;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+
+.togglesubmenu i{
+   
+    position: absolute;
+   
+}
+
+.togglesubmenu i:last-child{
+    color: transparent;
+    position: relative;
+    margin-left: 0px;
+}
+
+
+.togglesubmenu1 i{
+   
+    position: absolute;
+   
+}
+
+.togglesubmenu1 i:last-child{
+    color: transparent;
+    position: relative;
+    margin-left: 0px;
+}
+/*Main*/
+#tovary {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+#tovary div{
+    width: 285px;
+    margin: 20px 20px;
+    border: 2px solid black;
+    
+}
+
+#tovary h1{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+#tovary img{
+    transition: all 0.5s;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+ #tovary div:hover {
+    background-color: black;
+    color: red;
+ }
+
+ #tovary p{
+     margin: 20px 0;
+     font-size: 20px;
+ }
+
+  .butt{
+     width: 80%;
+     border: none ;
+     border-radius: 40px;
+     height: 40px;
+     text-decoration: none;
+     cursor: pointer;
+     background: cadetblue;
+     margin-bottom: 20px;
+     outline: none;
+ }
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#conv{
+    margin-top: 150px;
+    text-align: center;
+    width: 205px;
+    font-size: 30px;
+    position: fixed;
+    margin-left: -10%;
+}
+
+#curse{
+    position: fixed;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-top: 100px;
+}
+
+#Current{
+    display: none;
+}
+
+.xxx{
+    display:block;
+    padding-left: 35%;
+    margin-top: -44px !important;
+}
+
+.Pclass{
+   
+    
+    display: block;
+ 
+    overflow: hidden;
+    font-weight: bolder;
+    white-space: nowrap;
+   
+    
+}
+
+/*FOOTER*/
+.footer {
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    position: relative;
+    margin-top: 00px;
+    font-family: 'Ubuntu', sans-serif;
+    clear: right;clear: both;
+    
+    
+}
+
+.footer li{
+   display: inline-flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerlastli {
+    margin-left: 10px;
+}
+
+.footerlastli i{
+    margin-right: 5px;
+    color: pink;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}

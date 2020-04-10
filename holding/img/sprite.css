@@ -1,0 +1,292 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-about_1 {
+  background-image: url(../images/sprite.png);
+  background-position: -144px -157px;
+  width: 74px;
+  height: 56px;
+}
+.icon-about_2 {
+  background-image: url(../images/sprite.png);
+  background-position: -72px -157px;
+  width: 67px;
+  height: 67px;
+}
+.icon-about_3 {
+  background-image: url(../images/sprite.png);
+  background-position: -77px -82px;
+  width: 69px;
+  height: 69px;
+}
+.icon-about_4 {
+  background-image: url(../images/sprite.png);
+  background-position: -81px 0px;
+  width: 83px;
+  height: 68px;
+}
+.icon-about_5 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 76px;
+  height: 77px;
+}
+.icon-about_6 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -157px;
+  width: 67px;
+  height: 70px;
+}
+.icon-about_7 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -82px;
+  width: 72px;
+  height: 70px;
+}
+.icon-about_8 {
+  background-image: url(../images/sprite.png);
+  background-position: -169px 0px;
+  width: 66px;
+  height: 72px;
+}
+.icon-arrow_left {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -77px;
+  width: 27px;
+  height: 21px;
+}
+.icon-arrow_left_hover {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -155px;
+  width: 27px;
+  height: 21px;
+}
+.icon-arrow_right {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -129px;
+  width: 27px;
+  height: 21px;
+}
+.icon-arrow_right_hover {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -103px;
+  width: 27px;
+  height: 21px;
+}
+.icon-check {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -205px;
+  width: 14px;
+  height: 11px;
+}
+.icon-close_form {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -42px;
+  width: 30px;
+  height: 30px;
+}
+.icon-drop_arrow {
+  background-image: url(../images/sprite.png);
+  background-position: -328px -205px;
+  width: 11px;
+  height: 7px;
+}
+.icon-helm {
+  background-image: url(../images/sprite.png);
+  background-position: -309px 0px;
+  width: 30px;
+  height: 37px;
+}
+.icon-marker {
+  background-image: url(../images/sprite.png);
+  background-position: -309px -181px;
+  width: 15px;
+  height: 19px;
+}
+.icon-profile {
+  background-image: url(../images/sprite.png);
+  background-position: -164px -232px;
+  width: 35px;
+  height: 35px;
+}
+.icon-profile_hover {
+  background-image: url(../images/sprite.png);
+  background-position: -124px -232px;
+  width: 35px;
+  height: 35px;
+}
+.icon-rule_1 {
+  background-image: url(../images/sprite.png);
+  background-position: -169px -77px;
+  width: 65px;
+  height: 65px;
+}
+.icon-rule_2 {
+  background-image: url(../images/sprite.png);
+  background-position: -240px 0px;
+  width: 64px;
+  height: 64px;
+}
+.icon-rule_3 {
+  background-image: url(../images/sprite.png);
+  background-position: -240px -137px;
+  width: 59px;
+  height: 62px;
+}
+.icon-rule_4 {
+  background-image: url(../images/sprite.png);
+  background-position: -240px -69px;
+  width: 63px;
+  height: 63px;
+}
+.icon-slider_next {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -232px;
+  width: 26px;
+  height: 49px;
+}
+.icon-slider_next_hover {
+  background-image: url(../images/sprite.png);
+  background-position: -31px -232px;
+  width: 26px;
+  height: 49px;
+}
+.icon-slider_prev {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -232px;
+  width: 26px;
+  height: 49px;
+}
+.icon-slider_prev_hover {
+  background-image: url(../images/sprite.png);
+  background-position: -93px -232px;
+  width: 26px;
+  height: 49px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  .icon-about_1 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_2 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_3 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_4 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_5 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_6 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_7 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-about_8 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-arrow_left {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-arrow_left_hover {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-arrow_right {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-arrow_right_hover {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-check {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-close_form {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-drop_arrow {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-helm {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-marker {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-profile {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-profile_hover {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-rule_1 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-rule_2 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-rule_3 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-rule_4 {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-slider_next {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-slider_next_hover {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-slider_prev {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+  .icon-slider_prev_hover {
+    background-image: url(../images/sprite-2x.png);
+    background-size: 339px 281px;
+  }
+}

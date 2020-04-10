@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: whitesmoke;
+    font-family: "Ubuntu", sans-serif !important;
+    width: 100%;
+  }
+  
+  /*Меню*/
+  
+  header {
+    padding: 0px;
+    margin: 0px;
+    background: black;
+    height: 50px;
+  }
+  
+  .img1 {
+    margin-right: 0px;
+    margin-left: 130px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+   
+  }
+  
+  .menu [type="checkbox"] {
+    display: none;
+  }
+  
+  .menu {
+    margin: 0px;
+    padding-left: 250px;
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    margin-right: 0px;
+    position: relative;
+  }
+  
+  .menu ul,
+  ol {
+    list-style: none;
+  }
+  
+  .menu ul > li {
+    display: inline-flex;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    
+    padding-right: 10px;
+  }
+  
+  .lastli {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .lastli a {
+    margin-top: 3px;
+  }
+  
+  .lastli i {
+    color: pink;
+    margin-right: 5px;
+    margin-left: 20px;
+    font-size: 23px;
+    margin-top: 2px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .fas {
+    color: transparent;
+    margin-right: 5px;
+  }
+  
+  .menu li a:hover {
+    color: lightsalmon;
+    
+  }
+  
+  .menu li a:hover .fas {
+    color: white;
+    transition: 1.5s;
+  }
+  
+  .submenu {
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 0px;
+  }
+  
+  .submenu ul {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    display: none;
+  }
+  
+  .submenu ul li {
+    margin-top: 0px;
+    font-size: 20px;
+  
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    
+    display: block;
+  }
+  
+  .submenu ul > li {
+    padding: 0px;
+    margin: 10px ;
+    
+    
+  }
+  
+  .menu li:hover .submenu ul {
+    display: block;
+    background: black;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border: 5px solid wheat;
+   
+  }
+  
+  .submenu1 {
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 0px;
+  }
+  
+  .submenu1 ul {
+    position: relative;
+    margin-top: 0px;
+    display: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    
+  }
+  
+  .submenu1 ul li {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    display: block;
+    
+  }
+  
+  .submenu1 ul > li {
+    padding: 0px ;
+    margin:  10px 0px;
+  }
+  
+  .menu li:hover .submenu1 ul {
+    display: block;
+    position: relative;
+    background:black;
+    padding-bottom: 10px;
+    border: 5px solid wheat;
+   
+  
+  } 
+  
+  .togglesubmenu i {
+    position: absolute;
+    
+  }
+  
+  .togglesubmenu i:last-child {
+    color: transparent;
+    position: relative;
+    margin-left: 0px;
+  }
+  
+  .togglesubmenu1 i {
+    position: absolute;
+  }
+  
+  .togglesubmenu1 i:last-child {
+    color: transparent;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  /*FOOTER*/
+.footer {
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    position: relative;
+    margin-top: 00px;
+    font-family: "Ubuntu", sans-serif;
+    clear: right;
+    clear: both;
+  }
+  
+  .footer li {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footerlastli {
+    margin-left: 10px;
+  }
+  
+  .footerlastli i {
+    margin-right: 5px;
+    color: pink;
+  }
+  
+  .footer p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  

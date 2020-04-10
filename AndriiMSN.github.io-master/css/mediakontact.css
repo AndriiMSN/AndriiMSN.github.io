@@ -1,0 +1,283 @@
+@media only screen and (max-width:900px){
+    
+    
+     
+    
+    
+    body {
+        background: rgb(255, 255, 255);
+    }
+    
+    /*MENU*/
+    
+    header {
+        padding: 0px 0px;
+        background:white;
+       z-index: 999;
+    }
+    
+    .img1{
+        
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        }
+        
+        .menu [type="checkbox"]{
+            display: none;
+           }    
+
+
+  .togglemenu i {
+      color:white;
+      margin-right: 10px;
+      font-size: 30px;
+  }
+
+   .togglemenu {
+      display: block;
+      background:lightseagreen;
+      color: white;
+      text-align: left;
+      padding: 10px;
+      font-size: 25px;
+      cursor: pointer;
+      position: relative;
+
+  }
+
+  .menu ul{
+      display: none;
+      
+  }
+
+  input.togglemenu:checked ~ ul{
+    display: block;
+    z-index: 9999;
+    
+   }    
+
+  input.togglemenu:checked + label.togglemenu{
+    background:black;
+    color: white;
+    
+   }    
+    
+ .togglesubmenu {
+     display: block;
+     background: rgb(0, 0, 0);
+     padding: 0px;
+     margin: 0px;
+     position: relative;
+}
+ 
+.togglesubmenu1 {
+    display: block;
+    background: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+
+.togglesubmenu div {
+    display: none;
+}
+
+.togglesubmenu1 div {
+    display: none;
+}
+
+input.togglesubmenu:checked ~ .togglesubmenu div {
+    display: block;
+   padding: 0px;
+   position: relative;
+   margin: 0px;
+   }
+
+   input.togglesubmenu1:checked ~ .togglesubmenu1 div {
+    display: block;
+   padding: 0px;
+   position: relative;
+   margin: 0px;
+   }
+
+input.togglesubmenu:checked + label.togglesubmenu{
+    background:rgb(61, 38, 190);
+    color: white;
+    margin-top: -5px;transition: 0.5s;margin-bottom: -5px;
+   }    
+
+   input.togglesubmenu1:checked + label.togglesubmenu1{
+    background:rgb(61, 38, 190);
+    color: white;
+    margin-top: -5px;
+    transition: 0.5s;
+    margin-bottom: -5px;
+   }    
+   
+
+    
+    
+    .menu {
+        margin: 0px;
+        padding-left: 0px;
+        text-align: none;
+        font-family: 'Ubuntu', sans-serif;
+        margin-right: 0px;
+        
+        }
+
+        
+    
+    .menu ul , ol {
+        list-style: none;
+    }
+    
+    .menu ul > li {
+        display: block;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 0px;
+        text-align: left;
+        font-size: 30px;
+        padding: 5px 0px;
+        background: black;
+        }
+    
+        .menu a {
+            text-decoration: none;
+            color:white
+        }
+    
+        .fas {
+        color:white;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .menu li a:hover{
+        color: lightsalmon;
+    }
+    
+    .menu  li a:hover .fas {
+        color:pink;
+        transition:1.5s;
+    }
+
+    
+
+        .lastli i{
+            color: pink;
+            font-size: 30px;
+            margin-right: 20px;
+            padding: 0px;
+        }
+
+        
+  .submenu1 ul{
+      display: none;
+  }
+
+  .submenu1 ul li ,
+  .submenu ul li{
+      text-align: center;
+      background: purple;
+      margin-top: 2px;
+      
+  }
+
+  .togglesubmenu i{
+      color: rgb(253, 253, 253);
+      position: relative;
+      margin-top: 3px;
+      
+      
+      
+      
+  }
+
+  .togglesubmenu i:last-child{
+      color:yellow;
+      position: relative;
+      margin-left: 5px;
+      left: 0;
+      right: 0;
+      
+  }
+
+  .submenu1 i{
+    color:transparent;
+    margin-right: 5px;
+    position: relative;
+  }
+
+  .togglesubmenu1 i{
+    color: rgb(253, 253, 253);
+    position: relative;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.togglesubmenu1 i:last-child{
+    color:lightsalmon;
+    position: relative;
+    margin-left: 5px;
+    left: 0;
+    right: 0;
+}
+
+.submenu i{
+  color:transparent;
+  margin-right: 5px;
+  position: relative;
+}
+  
+.submenu ul{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.submenu1 ul{
+    border: none !important;
+    padding: 0 !important;
+}
+
+ /*Footer*/
+ .footer{
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer li{
+    display: block;
+    
+}
+
+.footer li:nth-child(3),
+.footer li:nth-child(4),
+.footer li:nth-child(5),
+.footer li:nth-child(7),
+.footer li:nth-child(8),
+.footer li:nth-child(9){
+    display: none;
+}
+
+.footerlastli {
+    padding: 0px 0px;
+    margin-left: 5px;
+}
+
+.footerlastli i{
+    margin-right: 5px;
+    font-size: 20px;
+    
+}
+
+
+   
+
+}
+
+
+

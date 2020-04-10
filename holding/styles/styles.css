@@ -1,0 +1,372 @@
+
+
+@font-face {
+  font-family: "GothamPro";
+  src: url(../fonts/GothamPro.ttf);
+}
+@font-face {
+  font-family: "GothamPro-Black";
+  src: url(../fonts/GothamPro-Black.ttf);
+}
+@font-face {
+  font-family: "GothamPro-Bold";
+  src: url(../fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+  font-family: "GothamPro-Medium";
+  src: url(../fonts/GothamPro-Medium.ttf);
+}
+
+:root {
+  --white: #ffff;
+  --orange: #e68c26;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+.mt-10 {
+  margin-top: 7.5rem !important;
+}
+
+body {
+  font-family: "GothamPro";
+}
+.h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "GothamPro";
+}
+.h1 span {
+  font-family: "GothamPro-Bold";
+}
+.text_p {
+  font-family: "GothamPro";
+  text-align: center;
+  font-size: 1.2rem;
+}
+a {
+  color: var(--white);
+}
+.button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 20px 30px;
+  font-size: 16px;
+  font-family: "GothamPro";
+
+  line-height: 1.2;
+}
+.button img {
+  margin-left: 10px;
+}
+
+/*Menu*/
+body > header > nav:nth-child(1){
+  display: none;
+}
+header {
+  background: url(../img/Узор+плашка+фото.png) center;
+  background-size: cover;
+  height: auto;
+}
+nav {
+  height: 95px;
+  background: url(../img/Плашка3.png);
+  font-size: 16px;
+}
+body > header > nav > div {
+  padding-top: 15px;
+}
+
+.header_block_menu {
+  position: relative;
+}
+.header_block_menu ul {
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.header_block_menu ul li {
+  margin: auto 0 auto 30px;
+  color: var(--white);
+  padding-top: 20px;
+}
+body
+  > header
+  > nav
+  > div
+  > div
+  > div.header_block_menu
+  > ul
+  > a:nth-child(1)
+  > li {
+  margin: 0;
+}
+body > header > nav > div > div > div.header_block_menu > ul > li > img {
+  margin-left: 5px;
+}
+
+.submenu {
+  position: relative;
+  text-align: center;
+}
+.podmenu {
+  text-align: center;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  width: 0;
+  height: 0;
+  text-align: center;
+  z-index: 10;
+}
+.menu:hover ul{
+  visibility: visible;
+  opacity: 1;
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: -20px !important;
+  
+}
+.menu ul li{
+  background-color: #223748;
+  padding: 15px 20px;
+  margin: 0;
+  border-bottom:1px solid white;
+  border-top:1px solid white;
+}
+.menu li:hover{
+  color: #223748;
+  background: white;
+  border: 1px solid #223748;
+}
+body > header > nav > div > div > div.column > div:nth-child(1) {
+  font-family: "GothamPro";
+  font-weight: bold;
+  color: var(--white);
+}
+body > header > nav > div > div > div.column > div.text-center > a {
+  color: var(--orange);
+  font-size: 14px;
+  text-decoration: underline;
+}
+body > header > nav > div > div > div.column {
+  padding-top: 8px;
+}
+body > header > nav > div > div > div.column > div:nth-child(1) > img {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+/*Title page*/
+.title_block {
+  position: relative;
+
+  height: 80vh;
+}
+.title_text {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.title_zag {
+  color: var(--white);
+  font-size: 38px;
+  font-family: "GothamPro-Black";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title_podzag {
+  color: var(--white);
+  font-family: "GothamPro";
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.title_text button {
+}
+.title_logo {
+  width: 110%;
+  position: relative;
+  top: 85%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.title_logo div {
+  height: fit-content;
+}
+.title_logo img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) scale(1);
+}
+/*Conditions*/
+body > div:nth-child(2) > div > div{
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.conditions {
+  height: 420px;
+
+  color: var(--white);
+
+  position: relative;
+
+  width: 30%;
+}
+.cond1 {
+  background-image: url(../img/cond1.png);
+}
+.cond2 {
+  background-image: url(../img/cond2.png);
+}
+.cond3 {
+  background-image: url(../img/cond3.png);
+}
+body > main > div:nth-child(2) > div > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cond-text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 0.8rem;
+}
+
+.cond-text-zag {
+  font-size: 18px;
+  font-family: "GothamPro-Bold";
+}
+
+/*advantages*/
+.advan {
+  background: url(../img/advbackg.png);
+}
+.about {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.about p:nth-child(3) {
+  font-size: 14px;
+}
+.about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-right {
+  position: relative;
+  padding: 0 40px 0 0;
+  font-size: 18px;
+}
+.about-right p:nth-child(3) {
+  font-size: 14px;
+}
+
+.about-right img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image_adv {
+  background: url(../img/adv_center.png) no-repeat center;
+  background-size: contain;
+  
+}
+
+
+/*How-work*/
+.how_work {
+  background: url(../img/how-work.png);
+  background-size: cover;
+  height: auto;
+  position: relative;
+  color: var(--white);
+}
+
+.how_work_text img {
+  margin: 10px auto;
+}
+.icon {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  border: 0.15rem dashed var(--orange);
+  position: relative;
+  margin: 0 auto;
+}
+.icon p {
+  width: 100%;
+  text-align: center;
+  color: var(--orange);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.how-work-zag {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/*Form*/
+.form {
+  background: url(../img/formbg.png);
+  background-size: contain;
+}
+.form_p {
+  font-size: 1.2rem;
+}
+
+.form-group input {
+  border: 1px solid #e6e6e6;
+  height: 67px;
+  width: 90%;
+  padding: 0 20px;
+}
+.button-form {
+  width: 100%;
+}
+body > div.form.container-fluid > div.container > p{
+  margin-bottom: 0;
+}
+.header-menu {
+  position: absolute;
+  margin-top: -20px;
+  height: 450%;
+  overflow-y: scroll !important;
+  font-size: 1.5rem;
+  background: #223748;
+  z-index: 50;
+  padding: 0;
+  left: 12%;
+}
+.header-menu ul {
+  padding: 20px;
+}
+.header-menu li{
+  margin: 20px 0;
+}
+
+
+

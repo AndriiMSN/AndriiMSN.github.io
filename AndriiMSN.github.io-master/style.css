@@ -1,0 +1,718 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+/*Меню*/
+
+header {
+  padding: 0px;
+  margin: 0px;
+  background: black;
+  height: 50px;
+}
+
+.img1 {
+  margin-right: 0px;
+  margin-left: 130px;
+  margin-bottom: 0;
+  margin-top: 10px;
+ 
+}
+
+.menu [type="checkbox"] {
+  display: none;
+}
+
+.menu {
+  margin: 0px;
+  padding-left: 250px;
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 0px;
+  position: relative;
+}
+
+.menu ul,
+ol {
+  list-style: none;
+}
+
+.menu ul > li {
+  display: inline-flex;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  
+  padding-right: 10px;
+}
+
+.lastli {
+  margin: 0px;
+  padding: 0px;
+}
+
+.lastli a {
+  margin-top: 3px;
+}
+
+.lastli i {
+  color: pink;
+  margin-right: 5px;
+  margin-left: 20px;
+  font-size: 23px;
+  margin-top: 2px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.fas {
+  color: transparent;
+  margin-right: 5px;
+}
+
+.menu li a:hover {
+  color: lightsalmon;
+  
+}
+
+.menu li a:hover .fas {
+  color: white;
+  transition: 1.5s;
+}
+
+.submenu {
+  margin-top: 0px;
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.submenu ul {
+  position: relative;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-right: 0px;
+  display: none;
+}
+
+.submenu ul li {
+  margin-top: 0px;
+  font-size: 20px;
+
+  text-align: center;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  
+  display: block;
+}
+
+.submenu ul > li {
+  padding: 0px;
+  margin: 10px ;
+  
+  
+}
+
+.menu li:hover .submenu ul {
+  display: block;
+  background: black;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border: 5px solid wheat;
+ 
+}
+
+.submenu1 {
+  margin-top: 0px;
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.submenu1 ul {
+  position: relative;
+  margin-top: 0px;
+  display: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  
+}
+
+.submenu1 ul li {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 0px;
+  text-align: center;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  display: block;
+  
+}
+
+.submenu1 ul > li {
+  padding: 0px ;
+  margin:  10px 0px;
+}
+
+.menu li:hover .submenu1 ul {
+  display: block;
+  position: relative;
+  background:black;
+  padding-bottom: 10px;
+  border: 5px solid wheat;
+ 
+
+} 
+
+.togglesubmenu i {
+  position: absolute;
+  
+}
+
+.togglesubmenu i:last-child {
+  color: transparent;
+  position: relative;
+  margin-left: 0px;
+}
+
+.togglesubmenu1 i {
+  position: absolute;
+}
+
+.togglesubmenu1 i:last-child {
+  color: transparent;
+  position: relative;
+  margin-left: 0px;
+}
+/*Main*/
+
+.top-panel {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: -4200px;
+  left: 0;
+  width: 40%;
+  margin-left: 57%;
+  height: 250px;
+  padding: 0;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: top 1000ms cubic-bezier(0.17,0.04,0.03,0.94);
+  height: 500px;
+  border-radius: 50px;
+}
+/* Блок сообщения */
+.message {
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 980px
+}
+/* Заголовок 1 уровня */
+.message h1 {
+  color: rgb(0, 0, 0);
+}
+/* Заголовок 2 уровня */
+.message h2 {
+  color: #888
+}
+.message p {
+  margin: 1em 0
+}
+.message a {
+  text-decoration: none;
+  color: #748b74
+}
+.message a:hover {
+  color: #95984b
+}
+
+.message ul{
+  list-style: none;
+  margin-top: 20px;
+  font-size: 25px;
+  color:black;
+}
+
+.message li{
+  margin: 10px;
+}
+
+.message i{
+  color: black;
+}
+
+
+
+/* Переключатель панели */
+label.btn {
+  display: block;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  right: 50px;
+  top: 0;
+  cursor: pointer;
+  background: #2bbbad;
+  width: 50px;
+  border-radius: 0 5px 5px 0px;
+  padding: 18px 15px;
+  color: #FFF;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+  margin-left: 40%;
+  margin-top: -100px;
+}
+/* Переключатель при наведении */
+label.btn:hover {
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
+}
+/* Стрелка переключателя вниз */
+label.btn:after {
+  content: '\f054';
+  font: normal 48px/1 FontAwesome;
+  text-decoration: inherit
+}
+/* Активация панели */
+.open:checked ~ .top-panel {
+  top: 80px
+}
+
+.open:checked ~ label.btn {
+  
+  margin-left: 40%;
+}
+/* Смещение контейнера контента страницы */
+.open:checked ~ .container {
+  margin-top: 300px
+}
+/* Цвет переключателя при клике */
+.open:checked + label.btn {
+  background: #dd6149
+}
+/* Стрелка переключателя вверх*/
+.open:checked + label.btn:after {
+  content: '\f077';
+  font: normal 48px/1 FontAwesome
+}
+/* Контейнер контента */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  transition: margin 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+  padding: 5em 3em;
+}
+
+
+.info{
+ text-align: center;
+}
+
+.instagram {
+  position: relative;
+  background: #77e8aa;
+  border-radius: 165px;
+  width: 350px;
+  margin-left: 10%;
+  margin-top: -250px;
+ 
+  
+}
+
+.instagram_foto{
+  width: 70%;
+  position: relative;
+  margin-top:25px;
+  margin-bottom: 50px;
+  margin-left: 1%;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+      transform:scale(1);
+  }
+  49% {
+      transform:scale(1.1);
+  }
+  50% {
+    transform:scale(1.1);
+}
+100% {
+    transform:scale(1);
+}
+}
+
+.information {
+  display: block;
+  max-width: 1361px;
+  height: 600px;
+  text-align: center;
+  background: url(img/french-bulldog-smart.jpg) no-repeat ;
+  margin: auto;
+  
+}
+
+.btn3 {
+  color: black;
+  font-size: 2.5em;
+  text-decoration: none;
+  
+  background: linear-gradient(top, #EE3D8C, #b7d412);
+  background: -webkit-linear-gradient(top,  #EE3D8C, #b7d412);
+  padding: 21px 0px;
+  border-radius: 150px;
+  position: relative;
+  display: block;
+  width: 44%;
+  margin-left: 55%;
+  margin-top: 140px;
+  margin-right: 60px;
+  box-shadow: 0px 8px 5px 0px rgb(85, 1, 74);
+  
+}
+
+#x a:hover  {
+  background: linear-gradient(bottom,   #d407a1, #b7d412);
+  background: -webkit-linear-gradient(bottom,  #d407a1, #b7d412);
+  
+}
+
+#x img{
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  margin-top: -8px;
+  width: 60px;
+  
+}
+
+
+.shop_zag{
+  padding-top: 70px;
+  font-size: 75px;
+  width: 40%;
+  text-align: center;
+  color: white;
+  
+}
+
+
+.shop_zag p{
+  background: rgb(0, 0, 0, 0.7);padding: 20px 0;
+}
+
+.zag {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.swiper-container {
+  width: 90%;
+  height: 300px;
+  margin: 0px 10%;
+  margin-bottom: 50px;
+}
+
+.swiper-container a {
+  color: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: whitesmoke;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* NEW PRODUCT */
+.newprod {
+  min-width: 100%;
+  position: relative;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.newprod a {
+  color: black;
+}
+.newprodh2 {
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item1 {
+  min-width: 100px;
+  min-height: 220px;
+  text-align: center;
+  background: url(img/toy1.jpg) no-repeat bottom;
+
+  display: inline-block;
+  background-size: 200px 170px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.item1:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: #fff;
+}
+
+.item2 {
+  min-width: 100px;
+  min-height: 220px;
+  text-align: center;
+  background: url(img/padigre.jpg) no-repeat bottom;
+
+  display: inline-block;
+  background-size: 200px 170px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.item2:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: #fff;
+}
+
+.item3 {
+  min-width: 100px;
+  min-height: 220px;
+  text-align: center;
+  background: url(img/1463_suhoy-korm-dlya-sobak-royal-canin-french-bulldog-puppy.png)
+    no-repeat bottom;
+  display: inline-block;
+  background-size: 200px 170px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.item3:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: #fff;
+}
+
+main {
+  display: none;
+}
+
+/*TIMER*/
+.sale {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  color: red;
+}
+
+.time-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin: 20px 0 0;
+}
+
+.time-block {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+  font-size: 2rem;
+}
+
+#news h1{
+ text-align: center;
+ margin: 20px 0;
+ background: blueviolet;
+ line-height: 50px;
+ font-size: 35px;
+}
+
+#allnews h1{
+  background: none;
+  font-size: 30px;
+}
+
+#allnews p{
+  font-size: 20px;
+}
+
+#allnews button{
+  margin: 30px;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: cadetblue;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#allnews button:hover{
+  background: chartreuse;
+} 
+
+#more {
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  line-height: 50px;
+  margin-bottom: 20px;
+  background: linear-gradient(bottom,   #6932c2, #3f007a);
+  background: -webkit-linear-gradient(bottom,  #6932c2, #3f007a);
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  color: coral;
+  box-shadow: 0px 2px 5px 2px black;
+}
+
+#more:hover{
+  background: linear-gradient(top,   #6932c2, #3f007a);
+  background: -webkit-linear-gradient(top,  #6932c2, #3f007a);
+}
+
+#all_tovary{
+  
+  margin-bottom: 20px;
+  background: linear-gradient(bottom,   #068b39, #011d0c);
+  background: -webkit-linear-gradient(bottom,  #068b39, #011d0c);
+  border: none;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 24px;
+  color: beige;
+  border-radius: 50px;
+  padding: 10px 40px;
+ margin-left: 70%;
+}
+
+#all_tovary:hover{
+  background: linear-gradient(bottom,    #011d0c, #068b39,);
+  background: -webkit-linear-gradient(bottom,   #011d0c, #068b39);
+}
+
+#all_tovary i{
+  color: black;
+  margin: 0 20px;
+}
+  
+#allnews {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  width: 80%;
+ margin-left: 20%;
+}
+
+
+
+#allnews div{
+display: none;
+width: 40%;
+text-align: center;
+margin-right: 5%;
+}
+
+
+/*FOOTER*/
+.footer {
+  height: auto;
+  width: auto;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  position: relative;
+  margin-top: 00px;
+  font-family: "Ubuntu", sans-serif;
+  clear: right;
+  clear: both;
+}
+
+.footer li {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerlastli {
+  margin-left: 10px;
+}
+
+.footerlastli i {
+  margin-right: 5px;
+  color: pink;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
