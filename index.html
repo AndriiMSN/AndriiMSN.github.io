@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrii Mosin</title>
     <link rel="stylesheet" href="holding/styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="AndriiMSN.github.io-master/swiper-master/package/css/swiper.min.css">
 </head>
-<body>
-    <h1 class="text-center">List my project</h1>
-    <div class="column">
-        <div>
-            <p class="text-center">Учебный проект</p>
-        </div>
-        <div class="text-center">
-            <a href="AndriiMSN.github.io-master/index.html">Frenchy store</a>
-        </div>
-        <div>
-            <p class="text-center mt-5">Грузоперевозки</p>
-        </div>
-        <div class="text-center">
-            <a href="holding/index.html">ЭнергоХолдин</a>
-        </div>
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .swiper-slide div{
+        
+    }
+    .swiper-slide img{
+       
+    }
+</style>
 
+<body>
+    <div class="container-fluid row" style="margin: 0 !important;">
+        <div class="col-md-6">
+            <h1 class="text-center">List my project</h1>
+            <div class="column">
+                <div>
+                    <p class="text-center">Учебный проект</p>
+                </div>
+                <div class="text-center">
+                    <a href="AndriiMSN.github.io-master/index.html">Frenchy store</a>
+                </div>
+                <div>
+                    <p class="text-center mt-5">Грузоперевозки</p>
+                </div>
+                <div class="text-center">
+                    <a href="holding/index.html">ЭнергоХолдин</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div><img src="img/Certificate WEB/Certificate WEB-1.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div><img src="img/cert-1024-16717857/cert-1024-16717857-1.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div><img src="img/Certificate QA/Certificate QA-1.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div><img src="img/Certificate Ed WEB/Certificate Ed WEB-1.jpg" alt=""></div></div>
+
+                    <!-- Add Pagination -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
     </div>
+
+    <script src="AndriiMSN.github.io-master/swiper-master/package/js/swiper.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
+
 </html>
