@@ -1,0 +1,384 @@
+@charset "UTF-8";
+body {
+  background-color: white;
+}
+
+/*HEADER*/
+header {
+  background: #499bea;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #e3bc20));
+  background: linear-gradient(to bottom, #499bea 0%, #ffcd04 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#499bea", endColorstr="#e3bc20", GradientType=0);
+  color: black;
+  font-size: 26px;
+}
+header nav {
+  display: block;
+  margin: 10px 0 0 70px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li a {
+  color: black;
+  margin-left: 15px;
+  text-align: center;
+}
+header .change-lang {
+  position: absolute;
+  right: 0px;
+  top: 14px;
+  z-index: 3;
+}
+header .change-lang .checked:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+header .change-lang .checked {
+  margin: 0 15px;
+  transition: all 0.2s;
+}
+header .change-lang img {
+  margin: 0 15px;
+}
+
+/*CHECKBOX*/
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  transition: all 0.2s;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+  width: 26px;
+  height: 26px;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active + label::before {
+  border-radius: 50%;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
+  background-color: white;
+  background-image: url(../img/hotpng.com.png);
+  background-size: cover;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+/* ABOUT ME*/
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+  padding: 5px;
+  width: auto;
+  box-shadow: 0px 43px 113px -20px black;
+  position: relative;
+  z-index: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.about::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 54s linear infinite;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+.about .about-block {
+  padding: 20px;
+  color: black;
+  background-color: white;
+  background-size: cover;
+}
+.about .info {
+  border-radius: 10px;
+}
+.about .info .info-text {
+  font-size: 1.7rem;
+}
+.about .social {
+  min-height: 70px;
+}
+.about .social a {
+  font-size: 45px;
+}
+.about .social a > i {
+  transition: all 0.2s;
+}
+.about .social a > i:hover {
+  transform: rotate(20deg) scale(1.1);
+  font-size: 60px;
+  transition: all 0.2s;
+}
+.about .social > div:nth-child(1) > a {
+  color: blue;
+}
+.about .social > div:nth-child(2) > a {
+  color: #ca5b6e;
+}
+.about .social > div:nth-child(4) > a {
+  color: red;
+}
+.about .social > div:nth-child(5) > a {
+  color: purple;
+}
+.about .social > div:nth-child(6) > a {
+  color: green;
+}
+
+.my-ava {
+  width: inherit;
+  border-radius: 50%;
+}
+
+/*TIMER*/
+.reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: #f26722;
+  font-weight: bold;
+}
+
+.time-text {
+  font-size: 18px;
+  color: black;
+  margin: 5px 0 0;
+}
+
+.time-block {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0px 10px;
+  width: 100px;
+  height: auto;
+  font-size: 28px;
+}
+
+/*SKILLS*/
+.my-skills {
+  border: 10px solid black;
+  padding: 5px;
+  width: none;
+  box-shadow: 0px 43px 113px -20px black;
+  position: relative;
+  z-index: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.my-skills::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 54s linear infinite;
+}
+.my-skills::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+.my-skills .html {
+  position: relative;
+}
+.my-skills .html p {
+  margin-left: 20px;
+}
+.my-skills .html span {
+  position: absolute;
+  right: 35px;
+}
+.my-skills .html .percent {
+  position: absolute;
+  right: 15px;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+  border: 10px solid black;
+  padding: 5px;
+  width: 90%;
+  box-shadow: 0px 43px 113px -20px black;
+  position: relative;
+  z-index: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.portfolio::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 54s linear infinite;
+}
+.portfolio::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+/*LIST*/
+.list-group {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.list-group a {
+  margin: 0 20px;
+  text-align: center;
+  border-left-width: 1px !important;
+}
+
+.list-group div {
+  width: -webkit-max-content;
+  width: max-content;
+  padding: 0 40px;
+}
+
+.list-group-item {
+  width: -webkit-max-content;
+  width: max-content;
+  font-size: 1rem;
+}
+
+.list-group-item.active {
+  background: orange;
+  border: 1px solid #e6e6e6 !important;
+  margin: 0 20px !important;
+  width: -webkit-max-content !important;
+  width: max-content !important;
+}
+
+body > div.column.container > div.row.container {
+  margin: 0 !important;
+}
+
+.switch {
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper div {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.swiper-slide img,
+.swiper-slide video,
+.swiper-slide p {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}

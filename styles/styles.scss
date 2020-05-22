@@ -1,0 +1,363 @@
+@mixin shadow {
+  -webkit-box-shadow: $boxshadow;
+  -moz-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+}
+
+@mixin block($width, $height) {
+  border: 10px solid rgb(0, 0, 0);
+  padding: 5px;
+  width: $width;
+  @include shadow();
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  position: relative;
+  z-index: 0;
+  height: $height;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#399953, #399953),
+      linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+      linear-gradient(#377af5, #377af5);
+    animation: rotate 54s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+  }
+}
+
+$bg: rgb(255, 255, 255);
+$color: rgb(0, 0, 0);
+$boxshadow: 0px 43px 113px -20px rgb(0, 0, 0);
+
+body {
+  background-color: $bg;
+}
+
+/*HEADER*/
+header {
+  background: rgba(73, 155, 234, 1);
+  background: -moz-linear-gradient(top,
+      rgba(73, 155, 234, 1) 0%,
+      rgb(255, 205, 4) 100%);
+  background: -webkit-gradient(left top,
+      left bottom,
+      color-stop(0%, rgba(73, 155, 234, 1)),
+      color-stop(100%, rgba(227, 188, 32, 1)));
+  background: -webkit-linear-gradient(top,
+      rgba(73, 155, 234, 1) 0%,
+      rgb(255, 205, 4) 100%);
+  background: -o-linear-gradient(top,
+      rgba(73, 155, 234, 1) 0%,
+      rgb(255, 205, 4) 100%);
+  background: -ms-linear-gradient(top,
+      rgba(73, 155, 234, 1) 0%,
+      rgb(255, 205, 4) 100%);
+  background: linear-gradient(to bottom,
+      rgba(73, 155, 234, 1) 0%,
+      rgb(255, 205, 4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#e3bc20', GradientType=0);
+  color: black;
+  font-size: 26px;
+
+  nav {
+    display: block;
+    margin: 10px 0 0 70px;
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          color: black;
+          margin-left: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .change-lang {
+    position: absolute;
+    right: 0px;
+    top: 14px;
+    z-index: 3;
+
+    .checked:hover {
+      transform: scale(1.1);
+      transition: all 0.2s;
+    }
+
+    .checked {
+      margin: 0 15px;
+      transition: all 0.2s;
+    }
+
+    img {
+      margin: 0 15px;
+    }
+  }
+}
+
+/*CHECKBOX*/
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  transition: all 0.2s;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+  width: 26px;
+  height: 26px;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+  border-radius: 50%;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+  background-color: white;
+  background-image: url(../img/hotpng.com.png);
+  background-size: cover;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled+label::before {}
+
+/* ABOUT ME*/
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  @include block(auto, fit-content);
+
+  .about-block {
+    padding: 20px;
+    color: $color;
+    background-color: $bg;
+    background-size: cover;
+  }
+
+  .info {
+    border-radius: 10px;
+
+    .info-text {
+      font-size: 1.7rem;
+    }
+  }
+
+  .social {
+    min-height: 70px;
+
+    a {
+      font-size: 45px;
+    }
+
+    a>i {
+      transition: all 0.2s;
+    }
+
+    a>i:hover {
+      transform: rotate(20deg) scale(1.1);
+      font-size: 60px;
+      transition: all 0.2s;
+    }
+
+    >div:nth-child(1)>a {
+      color: blue;
+    }
+
+    >div:nth-child(2)>a {
+      color: rgb(202, 91, 110);
+    }
+
+    >div:nth-child(4)>a {
+      color: red;
+    }
+
+    >div:nth-child(5)>a {
+      color: purple;
+    }
+
+    >div:nth-child(6)>a {
+      color: green;
+    }
+  }
+}
+
+.my-ava {
+  width: inherit;
+  border-radius: 50%;
+}
+
+/*TIMER*/
+.reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(242, 103, 34);
+  font-weight: bold;
+}
+
+.time-text {
+  font-size: 18px;
+
+  color: black;
+  margin: 5px 0 0;
+}
+
+.time-block {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0px 10px;
+  width: 100px;
+  height: auto;
+  font-size: 28px;
+}
+
+/*SKILLS*/
+.my-skills {
+  @include block(none, fit-content);
+  margin-left: auto;
+  margin-right: auto;
+
+  .html {
+    position: relative;
+
+    p {
+      margin-left: 20px;
+    }
+
+    span {
+      position: absolute;
+      right: 35px;
+    }
+
+    .percent {
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+
+/*PORTFOLIO*/
+.portfolio {
+  @include block(90%, fit-content);
+  display: block;
+  margin: 0 auto;
+}
+
+/*LIST*/
+.list-group {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.list-group a {
+  margin: 0 20px;
+  text-align: center;
+  border-left-width: 1px !important;
+}
+
+.list-group div {
+  width: max-content;
+  padding: 0 40px;
+}
+
+.list-group-item {
+  width: max-content;
+  font-size: 1rem;
+}
+
+.list-group-item.active {
+  background: orange;
+  border: 1px solid #e6e6e6 !important;
+  margin: 0 20px !important;
+  width: max-content !important;
+}
+
+body>div.column.container>div.row.container {
+  margin: 0 !important;
+}
+
+.switch {
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper div {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.swiper-slide img,
+.swiper-slide video,
+.swiper-slide p {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
