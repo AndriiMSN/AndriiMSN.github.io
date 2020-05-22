@@ -75,6 +75,14 @@ timeend = new Date(2019, 11, 1, 00, 00);
 async function time() {
   today = new Date();
   today = Math.floor((today - timeend) / 1);
+  /*if (today < timeend) {
+        document.getElementById('d').innerHTML = 0;
+        document.getElementById('h').innerHTML = 0;
+        document.getElementById('m').innerHTML = 0;
+        document.getElementById('s').innerHTML = 0;
+        document.getElementById('ml').innerHTML = 0;
+        return false;
+    } */
   tmsec = today % 1000;
   today = Math.floor(today / 1000);
   if (tmsec < 100) tmsec = '0' + tmsec;
@@ -102,7 +110,7 @@ $(document).ready(function changeText() {
   window.setInterval(function text() {
     var x = document.querySelector("#h");
     var q = x.innerText
-    var y = document.querySelector("div.reverse > div:nth-child(2) > p");
+    var y = document.querySelector("div.reverse > div:nth-child(3) > p");
     var z = y.innerText;
 
     if (q == "1" || q == "21") {
@@ -119,7 +127,7 @@ $(document).ready(function changeText() {
   window.setInterval(function textToday() {
     var x = document.querySelector("#d");
     var q = x.innerText
-    var y = document.querySelector("div.reverse > div:nth-child(1) > p");
+    var y = document.querySelector("div.reverse > div:nth-child(2) > p");
     var z = y.innerText;
 
     if (q == "1" || q == "21" || q == "31") {
@@ -136,7 +144,7 @@ $(document).ready(function changeText() {
   window.setInterval(function textMinut() {
     var x = document.querySelector("#m");
     var q = x.innerText
-    var y = document.querySelector("div.reverse > div:nth-child(3) > p");
+    var y = document.querySelector("div.reverse > div:nth-child(4) > p");
     var z = y.innerText;
 
     if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {
@@ -153,7 +161,7 @@ $(document).ready(function changeText() {
   window.setInterval(function textSecund() {
     var x = document.querySelector("#s");
     var q = x.innerText
-    var y = document.querySelector("div.reverse > div:nth-child(4) > p");
+    var y = document.querySelector("div.reverse > div:nth-child(5) > p");
     var z = y.innerText;
 
     if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {

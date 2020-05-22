@@ -243,8 +243,11 @@ header {
 }
 
 .my-ava {
-  width: inherit;
-  border-radius: 50%;
+  max-width: 200px;
+  width: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 50%; 
 }
 
 /*TIMER*/
