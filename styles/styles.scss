@@ -64,25 +64,37 @@ body {
 /*HEADER*/
 header {
   background: rgba(73, 155, 234, 1);
-  background: -moz-linear-gradient(top,
-      rgba(73, 155, 234, 1) 0%,
-      rgb(255, 205, 4) 100%);
-  background: -webkit-gradient(left top,
-      left bottom,
-      color-stop(0%, rgba(73, 155, 234, 1)),
-      color-stop(100%, rgba(227, 188, 32, 1)));
-  background: -webkit-linear-gradient(top,
-      rgba(73, 155, 234, 1) 0%,
-      rgb(255, 205, 4) 100%);
-  background: -o-linear-gradient(top,
-      rgba(73, 155, 234, 1) 0%,
-      rgb(255, 205, 4) 100%);
-  background: -ms-linear-gradient(top,
-      rgba(73, 155, 234, 1) 0%,
-      rgb(255, 205, 4) 100%);
-  background: linear-gradient(to bottom,
-      rgba(73, 155, 234, 1) 0%,
-      rgb(255, 205, 4) 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(73, 155, 234, 1) 0%,
+    rgb(255, 205, 4) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(73, 155, 234, 1)),
+    color-stop(100%, rgba(227, 188, 32, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(73, 155, 234, 1) 0%,
+    rgb(255, 205, 4) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(73, 155, 234, 1) 0%,
+    rgb(255, 205, 4) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(73, 155, 234, 1) 0%,
+    rgb(255, 205, 4) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(73, 155, 234, 1) 0%,
+    rgb(255, 205, 4) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#e3bc20', GradientType=0);
   color: black;
   font-size: 26px;
@@ -135,14 +147,14 @@ header {
 }
 
 /* для элемента label связанного с .custom-radio */
-.custom-radio+label {
+.custom-radio + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
 /* создание в label псевдоэлемента  before со следующими стилями */
-.custom-radio+label::before {
+.custom-radio + label::before {
   content: "";
   display: inline-block;
   width: 1em;
@@ -162,25 +174,28 @@ header {
 }
 
 /* стили для активной радиокнопки (при нажатии на неё) */
-.custom-radio:not(:disabled):active+label::before {
+.custom-radio:not(:disabled):active + label::before {
   border-radius: 50%;
 }
 
 /* стили для радиокнопки, находящейся в фокусе */
-.custom-radio:focus+label::before {}
+.custom-radio:focus + label::before {
+}
 
 /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-.custom-radio:focus:not(:checked)+label::before {}
+.custom-radio:focus:not(:checked) + label::before {
+}
 
 /* стили для радиокнопки, находящейся в состоянии checked */
-.custom-radio:checked+label::before {
+.custom-radio:checked + label::before {
   background-color: white;
   background-image: url(../img/hotpng.com.png);
   background-size: cover;
 }
 
 /* стили для радиокнопки, находящейся в состоянии disabled */
-.custom-radio:disabled+label::before {}
+.custom-radio:disabled + label::before {
+}
 
 /* ABOUT ME*/
 .about {
@@ -210,33 +225,33 @@ header {
       font-size: 45px;
     }
 
-    a>i {
+    a > i {
       transition: all 0.2s;
     }
 
-    a>i:hover {
+    a > i:hover {
       transform: rotate(20deg) scale(1.1);
       font-size: 60px;
       transition: all 0.2s;
     }
 
-    >div:nth-child(1)>a {
+    > div:nth-child(1) > a {
       color: blue;
     }
 
-    >div:nth-child(2)>a {
+    > div:nth-child(2) > a {
       color: rgb(202, 91, 110);
     }
 
-    >div:nth-child(4)>a {
+    > div:nth-child(4) > a {
       color: red;
     }
 
-    >div:nth-child(5)>a {
+    > div:nth-child(5) > a {
       color: purple;
     }
 
-    >div:nth-child(6)>a {
+    > div:nth-child(6) > a {
       color: green;
     }
   }
@@ -247,7 +262,7 @@ header {
   width: 50%;
   display: block;
   margin: auto;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 /*TIMER*/
@@ -342,7 +357,7 @@ header {
   width: max-content !important;
 }
 
-body>div.column.container>div.row.container {
+body > div.column.container > div.row.container {
   margin: 0 !important;
 }
 
