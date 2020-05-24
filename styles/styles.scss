@@ -34,10 +34,10 @@
     background-repeat: no-repeat;
     background-size: 50% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#399953, #399953),
-      linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
-      linear-gradient(#377af5, #377af5);
-    animation: rotate 54s linear infinite;
+    background-image: linear-gradient(#2c1092, #092e94),
+      linear-gradient(#c48615, rgb(242, 103, 34)), linear-gradient(#2c1092, #092e94),
+      linear-gradient( rgb(242, 103, 34), #c48615);
+    animation: rotate 164s linear infinite;
   }
 
   &::after {
@@ -48,57 +48,24 @@
     top: 6px;
     width: calc(100% - 12px);
     height: calc(100% - 12px);
-    background: white;
+    background: $bg;
     border-radius: 5px;
   }
 }
 
-$bg: rgb(255, 255, 255);
-$color: rgb(0, 0, 0);
-$boxshadow: 0px 43px 113px -20px rgb(0, 0, 0);
+$bg:#18191A;
+$color: #C9CBCE;
+$boxshadow: 0px 16px 48px -20px white;
 
 body {
-  background-color: $bg;
+  background-color: #242526;
+  color: $color;
 }
 
 /*HEADER*/
 header {
-  background: rgba(73, 155, 234, 1);
-  background: -moz-linear-gradient(
-    top,
-    rgba(73, 155, 234, 1) 0%,
-    rgb(255, 205, 4) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(73, 155, 234, 1)),
-    color-stop(100%, rgba(227, 188, 32, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(73, 155, 234, 1) 0%,
-    rgb(255, 205, 4) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(73, 155, 234, 1) 0%,
-    rgb(255, 205, 4) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(73, 155, 234, 1) 0%,
-    rgb(255, 205, 4) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(73, 155, 234, 1) 0%,
-    rgb(255, 205, 4) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#e3bc20', GradientType=0);
-  color: black;
-  font-size: 26px;
-
+  background:$bg;
+  color: $color;
   nav {
     display: block;
     margin: 10px 0 0 70px;
@@ -108,7 +75,6 @@ header {
 
       li {
         a {
-          color: black;
           margin-left: 15px;
           text-align: center;
         }
@@ -265,8 +231,8 @@ header {
   border-radius: 50%;
 }
 
-/*TIMER*/
-.reverse {
+ /*TIMER*/
+ .reverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,14 +241,12 @@ header {
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-  color: rgb(242, 103, 34);
+  color:rgb(242, 103, 34);
   font-weight: bold;
 }
 
 .time-text {
   font-size: 18px;
-
-  color: black;
   margin: 5px 0 0;
 }
 
@@ -296,14 +260,51 @@ header {
   font-size: 28px;
 }
 
+@media (min-device-width: 500px) 
+and (max-device-width: 9999px){
+    .oplata_kartoy{
+        display: none !important;
+    }
+}
+
+ @media (min-device-width: 1px) 
+ and (max-device-width: 575px){
+     .time-block:last-child{
+         display: none;
+     }
+
+     #ml p{
+         display: none;
+     }
+     body > header > div > div.text-center > div.reverse > div:nth-child(5){
+         display: none;
+     }
+
+     .time-block{
+         margin: 0px 2px;
+         font-size: 18px;
+     }
+
+     .time-text{
+         font-size: 12px;
+     }
+ }
+
 /*SKILLS*/
 .my-skills {
   @include block(none, fit-content);
   margin-left: auto;
   margin-right: auto;
-
+  color: $color;
+  text-transform: uppercase;
+      font-size: 30px;
+  h1{
+    background-color: $bg;
+    margin-bottom: 0 !important;
+    padding-bottom: 20px;
+  }
   .html {
-    position: relative;
+    position: relative;background-color: $bg;
 
     p {
       margin-left: 20px;
@@ -316,7 +317,7 @@ header {
 
     .percent {
       position: absolute;
-      right: 15px;
+      right: 5px;
     }
   }
 }
@@ -326,6 +327,8 @@ header {
   @include block(90%, fit-content);
   display: block;
   margin: 0 auto;
+  background-color: $bg;
+  color: $color;
 }
 
 /*LIST*/

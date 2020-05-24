@@ -1,16 +1,13 @@
 @charset "UTF-8";
 body {
-  background-color: white;
+  background-color: #242526;
+  color: #C9CBCE;
 }
 
 /*HEADER*/
 header {
-  background: #499bea;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #e3bc20));
-  background: linear-gradient(to bottom, #499bea 0%, #ffcd04 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#499bea", endColorstr="#e3bc20", GradientType=0);
-  color: black;
-  font-size: 26px;
+  background: #18191A;
+  color: #C9CBCE;
 }
 header nav {
   display: block;
@@ -20,7 +17,6 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
-  color: black;
   margin-left: 15px;
   text-align: center;
 }
@@ -101,7 +97,7 @@ header .change-lang img {
   border: 10px solid black;
   padding: 5px;
   width: auto;
-  box-shadow: 0px 43px 113px -20px black;
+  box-shadow: 0px 16px 48px -20px white;
   position: relative;
   z-index: 0;
   height: -webkit-fit-content;
@@ -127,8 +123,8 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-  animation: rotate 54s linear infinite;
+  background-image: linear-gradient(#2c1092, #092e94), linear-gradient(#c48615, #f26722), linear-gradient(#2c1092, #092e94), linear-gradient(#f26722, #c48615);
+  animation: rotate 164s linear infinite;
 }
 .about::after {
   content: "";
@@ -138,13 +134,13 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: white;
+  background: #18191A;
   border-radius: 5px;
 }
 .about .about-block {
   padding: 20px;
-  color: black;
-  background-color: white;
+  color: #C9CBCE;
+  background-color: #18191A;
   background-size: cover;
 }
 .about .info {
@@ -207,7 +203,6 @@ header .change-lang img {
 
 .time-text {
   font-size: 18px;
-  color: black;
   margin: 5px 0 0;
 }
 
@@ -221,12 +216,39 @@ header .change-lang img {
   font-size: 28px;
 }
 
+@media (min-device-width: 500px) and (max-device-width: 9999px) {
+  .oplata_kartoy {
+    display: none !important;
+  }
+}
+@media (min-device-width: 1px) and (max-device-width: 575px) {
+  .time-block:last-child {
+    display: none;
+  }
+
+  #ml p {
+    display: none;
+  }
+
+  body > header > div > div.text-center > div.reverse > div:nth-child(5) {
+    display: none;
+  }
+
+  .time-block {
+    margin: 0px 2px;
+    font-size: 18px;
+  }
+
+  .time-text {
+    font-size: 12px;
+  }
+}
 /*SKILLS*/
 .my-skills {
   border: 10px solid black;
   padding: 5px;
   width: none;
-  box-shadow: 0px 43px 113px -20px black;
+  box-shadow: 0px 16px 48px -20px white;
   position: relative;
   z-index: 0;
   height: -webkit-fit-content;
@@ -236,6 +258,9 @@ header .change-lang img {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  color: #C9CBCE;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 @keyframes rotate {
   100% {
@@ -254,8 +279,8 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-  animation: rotate 54s linear infinite;
+  background-image: linear-gradient(#2c1092, #092e94), linear-gradient(#c48615, #f26722), linear-gradient(#2c1092, #092e94), linear-gradient(#f26722, #c48615);
+  animation: rotate 164s linear infinite;
 }
 .my-skills::after {
   content: "";
@@ -265,11 +290,17 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: white;
+  background: #18191A;
   border-radius: 5px;
+}
+.my-skills h1 {
+  background-color: #18191A;
+  margin-bottom: 0 !important;
+  padding-bottom: 20px;
 }
 .my-skills .html {
   position: relative;
+  background-color: #18191A;
 }
 .my-skills .html p {
   margin-left: 20px;
@@ -280,7 +311,7 @@ header .change-lang img {
 }
 .my-skills .html .percent {
   position: absolute;
-  right: 15px;
+  right: 5px;
 }
 
 /*PORTFOLIO*/
@@ -288,7 +319,7 @@ header .change-lang img {
   border: 10px solid black;
   padding: 5px;
   width: 90%;
-  box-shadow: 0px 43px 113px -20px black;
+  box-shadow: 0px 16px 48px -20px white;
   position: relative;
   z-index: 0;
   height: -webkit-fit-content;
@@ -298,6 +329,8 @@ header .change-lang img {
   overflow: hidden;
   display: block;
   margin: 0 auto;
+  background-color: #18191A;
+  color: #C9CBCE;
 }
 @keyframes rotate {
   100% {
@@ -316,8 +349,8 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-  animation: rotate 54s linear infinite;
+  background-image: linear-gradient(#2c1092, #092e94), linear-gradient(#c48615, #f26722), linear-gradient(#2c1092, #092e94), linear-gradient(#f26722, #c48615);
+  animation: rotate 164s linear infinite;
 }
 .portfolio::after {
   content: "";
@@ -327,7 +360,7 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: white;
+  background: #18191A;
   border-radius: 5px;
 }
 

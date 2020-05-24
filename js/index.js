@@ -110,7 +110,6 @@ $(document).ready(function changeText() {
     var x = document.querySelector("#h");
     var q = x.innerText;
     var y = document.querySelector("div.reverse > div:nth-child(3) > p");
-    
 
     if (q == "1" || q == "21") {
       y.innerText = "час";
@@ -127,23 +126,15 @@ $(document).ready(function changeText() {
       y.innerText = "часов";
     }
   }, 10);
-
+  //КОД СОКРАЩЕН -- ПЕРЕНЕСТИ В ОСТАЛЬНЫЕ!!!
   window.setInterval(function textToday() {
-    var x = document.querySelector("#d");
-    var q = x.innerText;
+    var x = document.querySelector("#d").innerText;
+    var str = String(x);
+    var q = str[str.length - 1];
     var y = document.querySelector("div.reverse > div:nth-child(2) > p");
-    
-
-    if (q == "1" || q == "21" || q == "31") {
+    if (q == "1") {
       y.innerText = "день";
-    } else if (
-      q == "2" ||
-      q == "3" ||
-      q == "4" ||
-      q == "22" ||
-      q == "23" ||
-      q == "24"
-    ) {
+    } else if (q == "2" || q == "3" || q == "4") {
       y.innerText = "дня";
     } else {
       y.innerText = "дней";
@@ -154,7 +145,6 @@ $(document).ready(function changeText() {
     var x = document.querySelector("#m");
     var q = x.innerText;
     var y = document.querySelector("div.reverse > div:nth-child(4) > p");
-    
 
     if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {
       y.innerText = "минута";
@@ -185,7 +175,6 @@ $(document).ready(function changeText() {
     var x = document.querySelector("#s");
     var q = x.innerText;
     var y = document.querySelector("div.reverse > div:nth-child(5) > p");
-    
 
     if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {
       y.innerText = "секунда";
