@@ -35,7 +35,6 @@ $darksalt:darkslategray;;
     top: -50%;
     width: 200%;
     height: 200%;
-    background-color: #399953;
     background-repeat: no-repeat;
     background-size: 50% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
@@ -387,4 +386,30 @@ body > div.column.container > div.row.container {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
+}
+
+.holding{
+  .holding-img-title{
+  -webkit-filter: blur(1.5px);
+  filter: blur(1.5px);
+  }
+  .link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $color;
+    padding: 20px 40px;
+    background-color: rgb(0, 0, 0, .9);
+    p{
+      color: unset;
+      text-shadow: -3px 3px $color;
+      width: 100%;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 5px;
+    }
+  }
 }
