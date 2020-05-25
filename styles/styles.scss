@@ -1,3 +1,9 @@
+$bg:#18191A;
+$color: #C9CBCE;
+$boxshadow: 0px 16px 48px -20px white;
+$darksalt:darkslategray;;
+
+
 @mixin shadow {
   -webkit-box-shadow: $boxshadow;
   -moz-box-shadow: $boxshadow;
@@ -15,7 +21,6 @@
       transform: rotate(1turn);
     }
   }
-
   position: relative;
   z-index: 0;
   height: $height;
@@ -34,9 +39,9 @@
     background-repeat: no-repeat;
     background-size: 50% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#2c1092, #092e94),
-      linear-gradient(#c48615, rgb(242, 103, 34)), linear-gradient(#2c1092, #092e94),
-      linear-gradient( rgb(242, 103, 34), #c48615);
+    background-image: linear-gradient($darksalt, $darksalt),
+      linear-gradient($color, $darksalt), linear-gradient($darksalt, $darksalt),
+      linear-gradient( $color, $color);
     animation: rotate 164s linear infinite;
   }
 
@@ -53,9 +58,7 @@
   }
 }
 
-$bg:#18191A;
-$color: #C9CBCE;
-$boxshadow: 0px 16px 48px -20px white;
+
 
 body {
   background-color: #242526;
@@ -64,19 +67,23 @@ body {
 
 /*HEADER*/
 header {
-  background:$bg;
+  background:$darksalt;
   color: $color;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  border: 2px dotted white; 
   nav {
     display: block;
-    margin: 10px 0 0 70px;
-
+    width: 100%;
     ul {
       list-style: none;
 
       li {
+        margin-top: 15px;
+        font-size: 30px;
         a {
-          margin-left: 15px;
-          text-align: center;
         }
       }
     }
@@ -225,7 +232,7 @@ header {
 
 .my-ava {
   max-width: 200px;
-  width: 50%;
+  width: inherit;
   display: block;
   margin: auto;
   border-radius: 50%;
@@ -233,16 +240,15 @@ header {
 
  /*TIMER*/
  .reverse {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   box-sizing: border-box;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-  color:rgb(242, 103, 34);
+  color:$color;
   font-weight: bold;
+  background:$color;
+  border-radius: 5px;
 }
 
 .time-text {
@@ -252,12 +258,12 @@ header {
 
 .time-block {
   padding: 5px 5px;
-  border-radius: 5px;
   border: 1px solid black;
-  margin: 0px 10px;
-  width: 100px;
+  max-width: 100px;
+  width: 20%;
   height: auto;
-  font-size: 28px;
+  font-size: 18px;
+  background: $darksalt;
 }
 
 @media (min-device-width: 500px) 
@@ -354,7 +360,7 @@ and (max-device-width: 9999px){
 }
 
 .list-group-item.active {
-  background: orange;
+  background: $darksalt;
   border: 1px solid #e6e6e6 !important;
   margin: 0 20px !important;
   width: max-content !important;
