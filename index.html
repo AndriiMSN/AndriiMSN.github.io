@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/swiper_portfolio.min.css">
   <script src="https://kit.fontawesome.com/1591f06e5d.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/circle.js"></script>
 </head>
 
 <body onload="time();changeText()">
@@ -17,7 +19,7 @@
     <h1 class="mb-4">Мои работы</h1>
     <p><a href="holding/index.html">Грузоперевозки</a></p>
     <p><a href="./AndriiMSN.github.io-master/index.html">Учебный проект</a></p>
-   <p> <a href="https://goldcoach.ru/">Freelancer on this site</a></p>
+    <p> <a href="https://goldcoach.ru/">Freelancer on this site</a></p>
   </div>
   <header>
     <div class="container-fluid">
@@ -52,8 +54,8 @@
       </div>
     </div>
   </header>
-  <section class="row">
-    <section class="mt-2 col-md-7 about">
+  <section class="column container">
+    <section class="mt-2  about">
       <div class="about-block column">
         <div class="row">
           <div class="col-md-4 avatar">
@@ -124,34 +126,39 @@
       </div>
       </div>
     </section>
-    <div class="my-skills col-md-4 mt-4">
+    <div class="my-skills mt-4">
       <h1 class="text-center scrolltop">Мои навыки</h1>
-      <div>
-        <div class="html row">
-          <p>html</p><span>99</span>
-          <p class="percent">%</p>
+      <div class="row">
+        <div class="html row col-md-4">
+          <p>html</p>
+          <div id="circle" class="row">
+            <div class="circle-text row">
+              <span>99</span>
+            <p class="percent">%</p>
+            </div>
+          </div>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>css</p><span>84</span>
           <p class="percent">%</p>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>bootstrap</p><span>91</span>
           <p class="percent">%</p>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>SCSS</p><span>93</span>
           <p class="percent">%</p>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>javasript</p><span>69</span>
           <p class="percent">%</p>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>jquery</p><span>68</span>
           <p class="percent">%</p>
         </div>
-        <div class="html row">
+        <div class="html row col-md-4">
           <p>QA</p><span>59</span>
           <p class="percent">%</p>
         </div>
@@ -179,8 +186,8 @@
               href="#list-messages" role="tab" aria-controls="3" aria-selected="false">
               <div class="">Технологии</div>
             </a>
-            <a class="list-group-item list-group-item-action" id="list-test-list" data-toggle="list"
-              href="#list-test" role="tab" aria-controls="4" aria-selected="false">
+            <a class="list-group-item list-group-item-action" id="list-test-list" data-toggle="list" href="#list-test"
+              role="tab" aria-controls="4" aria-selected="false">
               <div class="">Отзыв</div>
             </a>
           </div>
@@ -196,8 +203,10 @@
                         <img src="img/HOLD_IN.png" alt="" class="holding-img-title" style="width: 100%;">
                         <a href="holding/index.html" target="_blank">
                           <div class="link">
-                          <div><p>ПЕРЕЙТИ</p></div>
-                        </div>
+                            <div>
+                              <p>ПЕРЕЙТИ</p>
+                            </div>
+                          </div>
                       </div> </a>
                       <div class="col-md-4">
                         <p class="text-center mb-3">Google Speed Page</p>
@@ -205,9 +214,9 @@
 
 
                       </div>
-                    </div>  
+                    </div>
                   </div>
-                  
+
                 </div>
                 <!-- Add Pagination 
                 <div class="swiper-button-next btn-next-0" tabindex="0" role="button" aria-label="Next slide"
@@ -216,7 +225,7 @@
                   aria-label="Previous slide" aria-disabled="true"></div>
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>-->
               </div>
-            </div> 
+            </div>
 
             <div class="tab-pane fade" id="list-profile">
               <div
@@ -320,7 +329,6 @@
     </div>
     </div>
   </section>
-  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/swiper.min.js"></script>

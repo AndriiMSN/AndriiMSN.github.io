@@ -1,13 +1,13 @@
 @charset "UTF-8";
 body {
   background-color: #242526;
-  color: #C9CBCE;
+  color: #c9cbce;
 }
 
 /*HEADER*/
 header {
   background: darkslategray;
-  color: #C9CBCE;
+  color: #c9cbce;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -127,7 +127,7 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, #C9CBCE);
+  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, #c9cbce);
   animation: rotate 164s linear infinite;
 }
 .about::after {
@@ -138,13 +138,13 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: #18191A;
+  background: #18191a;
   border-radius: 5px;
 }
 .about .about-block {
   padding: 20px;
-  color: #C9CBCE;
-  background-color: #18191A;
+  color: #c9cbce;
+  background-color: #18191a;
   background-size: cover;
 }
 .about .info {
@@ -198,9 +198,9 @@ header .change-lang img {
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-  color: #C9CBCE;
+  color: #c9cbce;
   font-weight: bold;
-  background: #C9CBCE;
+  background: #c9cbce;
   border-radius: 5px;
 }
 
@@ -212,8 +212,8 @@ header .change-lang img {
 .time-block {
   padding: 5px 5px;
   border: 1px solid black;
-  max-width: 100px;
-  width: 20%;
+  max-width: 250px;
+  width: 19%;
   height: auto;
   font-size: 18px;
   background: darkslategray;
@@ -261,7 +261,7 @@ header .change-lang img {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  color: #C9CBCE;
+  color: #c9cbce;
   text-transform: uppercase;
   font-size: 30px;
 }
@@ -281,7 +281,7 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, #C9CBCE);
+  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, #c9cbce);
   animation: rotate 164s linear infinite;
 }
 .my-skills::after {
@@ -292,28 +292,29 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: #18191A;
+  background: #18191a;
   border-radius: 5px;
 }
 .my-skills h1 {
-  background-color: #18191A;
+  background-color: #18191a;
   margin-bottom: 0 !important;
   padding-bottom: 20px;
 }
 .my-skills .html {
   position: relative;
-  background-color: #18191A;
+  background-color: #18191a;
 }
-.my-skills .html p {
-  margin-left: 20px;
+.my-skills .html #circle {
+  position: relative;
+  margin-left: 25px;
+  margin-top: -30px;
 }
-.my-skills .html span {
+.my-skills .html #circle .circle-text {
   position: absolute;
-  right: 35px;
-}
-.my-skills .html .percent {
-  position: absolute;
-  right: 5px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-48%, -35%);
 }
 
 /*PORTFOLIO*/
@@ -331,8 +332,8 @@ header .change-lang img {
   overflow: hidden;
   display: block;
   margin: 0 auto;
-  background-color: #18191A;
-  color: #C9CBCE;
+  background-color: #18191a;
+  color: #c9cbce;
 }
 @keyframes rotate {
   100% {
@@ -350,7 +351,7 @@ header .change-lang img {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#C9CBCE, #C9CBCE);
+  background-image: linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, darkslategray), linear-gradient(darkslategray, darkslategray), linear-gradient(#c9cbce, #c9cbce);
   animation: rotate 164s linear infinite;
 }
 .portfolio::after {
@@ -361,7 +362,7 @@ header .change-lang img {
   top: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: #18191A;
+  background: #18191a;
   border-radius: 5px;
 }
 
@@ -429,13 +430,13 @@ body > div.column.container > div.row.container {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  border: 2px solid #C9CBCE;
+  border: 2px solid #c9cbce;
   padding: 20px 40px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 .holding .link p {
   color: unset;
-  text-shadow: -3px 3px #C9CBCE;
+  text-shadow: -3px 3px #c9cbce;
   width: 100%;
   font-size: 36px;
   text-transform: uppercase;

@@ -1,9 +1,7 @@
-$bg:#18191A;
-$color: #C9CBCE;
+$bg: #18191a;
+$color: #c9cbce;
 $boxshadow: 0px 16px 48px -20px white;
-$darksalt:darkslategray;;
-
-
+$darksalt: darkslategray;
 @mixin shadow {
   -webkit-box-shadow: $boxshadow;
   -moz-box-shadow: $boxshadow;
@@ -21,6 +19,7 @@ $darksalt:darkslategray;;
       transform: rotate(1turn);
     }
   }
+
   position: relative;
   z-index: 0;
   height: $height;
@@ -40,7 +39,7 @@ $darksalt:darkslategray;;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     background-image: linear-gradient($darksalt, $darksalt),
       linear-gradient($color, $darksalt), linear-gradient($darksalt, $darksalt),
-      linear-gradient( $color, $color);
+      linear-gradient($color, $color);
     animation: rotate 164s linear infinite;
   }
 
@@ -57,8 +56,6 @@ $darksalt:darkslategray;;
   }
 }
 
-
-
 body {
   background-color: #242526;
   color: $color;
@@ -66,22 +63,25 @@ body {
 
 /*HEADER*/
 header {
-  background:$darksalt;
+  background: $darksalt;
   color: $color;
   position: fixed;
   z-index: 10;
   width: 100%;
   bottom: 0;
-  border: 2px dotted white; 
+  border: 2px dotted white;
+
   nav {
     display: block;
     width: 100%;
+
     ul {
       list-style: none;
 
       li {
         margin-top: 15px;
         font-size: 30px;
+
         a {
         }
       }
@@ -237,16 +237,16 @@ header {
   border-radius: 50%;
 }
 
- /*TIMER*/
- .reverse {
+/*TIMER*/
+.reverse {
   text-align: center;
   box-sizing: border-box;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-  color:$color;
+  color: $color;
   font-weight: bold;
-  background:$color;
+  background: $color;
   border-radius: 5px;
 }
 
@@ -258,42 +258,41 @@ header {
 .time-block {
   padding: 5px 5px;
   border: 1px solid black;
-  max-width: 100px;
-  width: 20%;
+  max-width: 250px;
+  width: 19%;
   height: auto;
   font-size: 18px;
   background: $darksalt;
 }
 
-@media (min-device-width: 500px) 
-and (max-device-width: 9999px){
-    .oplata_kartoy{
-        display: none !important;
-    }
+@media (min-device-width: 500px) and (max-device-width: 9999px) {
+  .oplata_kartoy {
+    display: none !important;
+  }
 }
 
- @media (min-device-width: 1px) 
- and (max-device-width: 575px){
-     .time-block:last-child{
-         display: none;
-     }
+@media (min-device-width: 1px) and (max-device-width: 575px) {
+  .time-block:last-child {
+    display: none;
+  }
 
-     #ml p{
-         display: none;
-     }
-     body > header > div > div.text-center > div.reverse > div:nth-child(5){
-         display: none;
-     }
+  #ml p {
+    display: none;
+  }
 
-     .time-block{
-         margin: 0px 2px;
-         font-size: 18px;
-     }
+  body > header > div > div.text-center > div.reverse > div:nth-child(5) {
+    display: none;
+  }
 
-     .time-text{
-         font-size: 12px;
-     }
- }
+  .time-block {
+    margin: 0px 2px;
+    font-size: 18px;
+  }
+
+  .time-text {
+    font-size: 12px;
+  }
+}
 
 /*SKILLS*/
 .my-skills {
@@ -302,27 +301,30 @@ and (max-device-width: 9999px){
   margin-right: auto;
   color: $color;
   text-transform: uppercase;
-      font-size: 30px;
-  h1{
+  font-size: 30px;
+
+  h1 {
     background-color: $bg;
     margin-bottom: 0 !important;
     padding-bottom: 20px;
   }
+
   .html {
-    position: relative;background-color: $bg;
+    position: relative;
+    background-color: $bg;
 
-    p {
-      margin-left: 20px;
-    }
+    #circle {
+      position: relative;
+      margin-left: 25px;
+      margin-top: -30px;
 
-    span {
-      position: absolute;
-      right: 35px;
-    }
-
-    .percent {
-      position: absolute;
-      right: 5px;
+      .circle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-48%, -35%);
+      }
     }
   }
 }
@@ -388,12 +390,13 @@ body > div.column.container > div.row.container {
   object-fit: cover;
 }
 
-.holding{
-  .holding-img-title{
-  -webkit-filter: blur(1.5px);
-  filter: blur(1.5px);
+.holding {
+  .holding-img-title {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
   }
-  .link{
+
+  .link {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -401,8 +404,9 @@ body > div.column.container > div.row.container {
     transform: translate(-50%, -50%);
     border: 2px solid $color;
     padding: 20px 40px;
-    background-color: rgb(0, 0, 0, .9);
-    p{
+    background-color: rgb(0, 0, 0, 0.9);
+
+    p {
       color: unset;
       text-shadow: -3px 3px $color;
       width: 100%;
