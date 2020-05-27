@@ -19,15 +19,38 @@ $(document).ready(function () {
 /*Счетчик */
 
 /* CIRCLE */
-function Circle(id,value){
-  $(''+id+'').circleProgress({
+function Circle(id, value) {
+  $("" + id + "").circleProgress({
     value: value,
     size: 100,
     fill: {
-      gradient: ["red", "orange"]
-    }
+      gradient: ["red", "orange"],
+    },
   });
 }
+
+$(document).ready(function () {
+  Circle("#circle", 0.99);
+  Circle("#circle1", 0.89);
+  Circle("#circle2", 0.68);
+  Circle("#circle3", 0.54);
+  Circle("#circle4", 0.76);
+  Circle("#circle5", 0.94);
+});
+
+$(window).scroll(function () {
+  wh = window.innerHeight; // Высота видимой части
+  let blockTop = $(".html.row").offset().top; // Получаем отступ блока
+  x = $(window).scrollTop();
+  if (blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 10)) {
+    Circle("#circle", 0.99);
+    Circle("#circle1", 0.89);
+    Circle("#circle2", 0.68);
+    Circle("#circle3", 0.54);
+    Circle("#circle4", 0.76);
+    Circle("#circle5", 0.94);
+  }
+});
 
 /*MAIN */
 function MyCount(a) {
@@ -49,14 +72,13 @@ function MyCount(a) {
 
       $(".html:nth-child(" + a + ")  span").text(counter._count++); // Иначе делаем что нужно
 
-      setTimeout(counter, 0); // И ставим таймер на следующую итерацию
+      setTimeout(counter, 15); // И ставим таймер на следующую итерацию
     };
   counter._count = 0; // Обнуляем значение при загрузке
   $(document).ready((_) => {
     // и запускаем счетчик
     flag = !flag;
     counter();
-    Circle('#circle', 0.75);
   });
   $(window).scroll((_) => {
     x = $(window).scrollTop();
@@ -70,25 +92,16 @@ function MyCount(a) {
         counter(); // Запускаем что надо
       }
     } */
-    if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 80)) {
+    if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 10)) {
       // Если флаг позволяет запустить таймер и скролл дошёл
       flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
       counter._count = 0;
       counter(); // Запускаем что надо
     }
-
     console.log("blockTOP  " + blockTop);
     console.log("2- " + x + wh / 2 + "\n3- " + x + (wh / 2 - 10));
-    $(window).scroll(function () {
-      x = $(window).scrollTop();
-      if (blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 80)) {
-        Circle('#circle', 0.75);
-      }
-    })
   });
 }
-
-
 
 /*TIMER */
 timeend = new Date();

@@ -304,17 +304,30 @@ header .change-lang img {
   position: relative;
   background-color: #18191a;
 }
-.my-skills .html #circle {
+.my-skills .html > p {
+  margin-top: -43px;
+}
+.my-skills .html #circle,
+.my-skills .html #circle1,
+.my-skills .html #circle2,
+.my-skills .html #circle3,
+.my-skills .html #circle4,
+.my-skills .html #circle5 {
   position: relative;
   margin-left: 25px;
   margin-top: -30px;
 }
-.my-skills .html #circle .circle-text {
+.my-skills .html #circle .circle-text,
+.my-skills .html #circle1 .circle-text,
+.my-skills .html #circle2 .circle-text,
+.my-skills .html #circle3 .circle-text,
+.my-skills .html #circle4 .circle-text,
+.my-skills .html #circle5 .circle-text {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-48%, -35%);
+  transform: translate(-48%, -65%);
 }
 
 /*PORTFOLIO*/

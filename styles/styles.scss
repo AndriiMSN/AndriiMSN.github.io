@@ -312,8 +312,18 @@ header {
   .html {
     position: relative;
     background-color: $bg;
+    
+      &>p{
+        margin-top: -43px;
+      }
+    
 
-    #circle {
+    #circle,
+    #circle1,
+    #circle2,
+    #circle3,
+    #circle4,
+    #circle5{
       position: relative;
       margin-left: 25px;
       margin-top: -30px;
@@ -323,7 +333,7 @@ header {
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-48%, -35%);
+        transform: translate(-48%, -65%);
       }
     }
   }
