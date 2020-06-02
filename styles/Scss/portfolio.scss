@@ -1,0 +1,88 @@
+/*PORTFOLIO*/
+.portfolio {
+  @include block(90%, fit-content);
+  display: block;
+  margin: 0 auto;
+  background-color: $bg;
+  color: $color;
+}
+
+/*LIST*/
+.list-group {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.list-group a {
+  margin: 0 20px;
+  text-align: center;
+  border-left-width: 1px !important;
+}
+
+.list-group div {
+  width: max-content;
+  padding: 0 40px;
+}
+
+.list-group-item {
+  width: max-content;
+  font-size: 1rem;
+}
+
+.list-group-item.active {
+  background: $darksalt;
+  border: 1px solid #e6e6e6 !important;
+  margin: 0 20px !important;
+  width: max-content !important;
+}
+
+body > div.column.container > div.row.container {
+  margin: 0 !important;
+}
+
+.switch {
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper div {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.swiper-slide img,
+.swiper-slide video,
+.swiper-slide p {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.holding {
+  .holding-img-title {
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+  }
+
+  .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $color;
+    padding: 20px 40px;
+    background-color: rgb(0, 0, 0, 0.9);
+
+    p {
+      color: unset;
+      text-shadow: -3px 3px $color;
+      width: 100%;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 5px;
+    }
+  }
+}

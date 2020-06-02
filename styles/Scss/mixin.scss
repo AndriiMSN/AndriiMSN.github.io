@@ -1,0 +1,53 @@
+@mixin shadow {
+  -webkit-box-shadow: $boxshadow;
+  -moz-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+}
+
+@mixin block($width, $height) {
+  border: 10px solid rgb(0, 0, 0);
+  padding: 5px;
+  width: $width;
+  @include shadow();
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  position: relative;
+  z-index: 0;
+  height: $height;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient($darksalt, $darksalt),
+      linear-gradient($color, $darksalt), linear-gradient($darksalt, $darksalt),
+      linear-gradient($color, $color);
+    animation: rotate 164s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: $bg;
+    border-radius: 5px;
+  }
+}

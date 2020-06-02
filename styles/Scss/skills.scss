@@ -1,0 +1,43 @@
+/*SKILLS*/
+.my-skills {
+  @include block(none, fit-content);
+  margin-left: auto;
+  margin-right: auto;
+  color: $color;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  h1 {
+    background-color: $bg;
+    margin-bottom: 0 !important;
+    padding-bottom: 20px;
+  }
+
+  .html {
+    position: relative;
+    background-color: $bg;
+
+    & > p {
+      margin-top: -43px;
+    }
+
+    #circle,
+    #circle1,
+    #circle2,
+    #circle3,
+    #circle4,
+    #circle5 {
+      position: relative;
+      margin-left: 25px;
+      margin-top: -30px;
+
+      .circle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-48%, -65%);
+      }
+    }
+  }
+}

@@ -142,99 +142,38 @@ async function time() {
   window.setTimeout("time()", 10);
 }
 
+function change(id, num, text1, text2, text3, text4) {
+  var x = document.querySelector(id).innerText;
+  var str = String(x);
+  var q = str[str.length - 1];
+  var i = str[str.length - 2];
+  var y = document.querySelector('div.reverse > div:nth-child('+num+') > p');
+  if (q == "1") {
+    y.innerText = `${text1}`;
+  } else if (q == "2" || q == "3" || q == "4") {
+    y.innerText = `${text2}`;
+  } else {
+    y.innerText = `${text3}`;
+  }
+  if (i == "1"){
+    y.innerText = `${text4}`;
+  }
+}
+
 $(document).ready(function changeText() {
   window.setInterval(function text() {
-    var x = document.querySelector("#h");
-    var q = x.innerText;
-    var y = document.querySelector("div.reverse > div:nth-child(3) > p");
-
-    if (q == "1" || q == "21") {
-      y.innerText = "час";
-    } else if (
-      q == "2" ||
-      q == "3" ||
-      q == "4" ||
-      q == "22" ||
-      q == "23" ||
-      q == "24"
-    ) {
-      y.innerText = "часа";
-    } else {
-      y.innerText = "часов";
-    }
+    change("#h", 2, "час", "часа", "часов", "чаов");
   }, 10);
   //КОД СОКРАЩЕН -- ПЕРЕНЕСТИ В ОСТАЛЬНЫЕ!!!
-  window.setInterval(function textToday() {
-    var x = document.querySelector("#d").innerText;
-    var str = String(x);
-    var q = str[str.length - 1];
-    var y = document.querySelector("div.reverse > div:nth-child(2) > p");
-    if (q == "1") {
-      y.innerText = "день";
-    } else if (q == "2" || q == "3" || q == "4") {
-      y.innerText = "дня";
-    } else {
-      y.innerText = "дней";
-    }
+  window.setInterval( function textDay(){
+    change("#d", 1, "день", "дня", "дней", "дней")
   }, 10);
 
   window.setInterval(function textMinut() {
-    var x = document.querySelector("#m");
-    var q = x.innerText;
-    var y = document.querySelector("div.reverse > div:nth-child(4) > p");
-
-    if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {
-      y.innerText = "минута";
-    } else if (
-      q == "02" ||
-      q == "03" ||
-      q == "04" ||
-      q == "22" ||
-      q == "23" ||
-      q == "24" ||
-      q == "32" ||
-      q == "33" ||
-      q == "34" ||
-      q == "42" ||
-      q == "43" ||
-      q == "44" ||
-      q == "52" ||
-      q == "53" ||
-      q == "54"
-    ) {
-      y.innerText = "минуты";
-    } else {
-      y.innerText = "минут";
-    }
+    change("#m", 3, "минута", "минуты", "минут", "минут");
   }, 10);
 
   window.setInterval(function textSecund() {
-    var x = document.querySelector("#s");
-    var q = x.innerText;
-    var y = document.querySelector("div.reverse > div:nth-child(5) > p");
-
-    if (q == "01" || q == "21" || q == "31" || q == "41" || q == "51") {
-      y.innerText = "секунда";
-    } else if (
-      q == "02" ||
-      q == "03" ||
-      q == "04" ||
-      q == "22" ||
-      q == "23" ||
-      q == "24" ||
-      q == "32" ||
-      q == "33" ||
-      q == "34" ||
-      q == "42" ||
-      q == "43" ||
-      q == "44" ||
-      q == "52" ||
-      q == "53" ||
-      q == "54"
-    ) {
-      y.innerText = "секунды";
-    } else {
-      y.innerText = "секунд";
-    }
+    change("#s", 4, "секунда", "секунды", "секунд", "секунд");
   }, 10);
 });

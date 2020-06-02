@@ -1,0 +1,120 @@
+/* ABOUT ME*/
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  @include block(auto, fit-content);
+
+  .about-block {
+    padding: 20px;
+    color: $color;
+    background-color: $bg;
+    background-size: cover;
+  }
+
+  .info {
+    border-radius: 10px;
+
+    .info-text {
+      font-size: 1.7rem;
+    }
+  }
+
+  .social {
+    min-height: 70px;
+
+    a {
+      font-size: 45px;
+    }
+
+    a > i {
+      transition: all 0.2s;
+    }
+
+    a > i:hover {
+      transform: rotate(20deg) scale(1.1);
+      font-size: 60px;
+      transition: all 0.2s;
+    }
+
+    > div:nth-child(1) > a {
+      color: blue;
+    }
+
+    > div:nth-child(2) > a {
+      color: rgb(202, 91, 110);
+    }
+
+    > div:nth-child(4) > a {
+      color: red;
+    }
+
+    > div:nth-child(5) > a {
+      color: purple;
+    }
+
+    > div:nth-child(6) > a {
+      color: green;
+    }
+  }
+}
+
+.my-ava {
+  max-width: 200px;
+  width: inherit;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/*TIMER*/
+.reverse {
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: $color;
+  font-weight: bold;
+  background: $color;
+  border-radius: 5px;
+}
+
+.time-text {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+.time-block {
+  padding: 5px 5px;
+  border: 1px solid black;
+  max-width: 250px;
+  width: 19%;
+  height: auto;
+  font-size: 18px;
+  background: $darksalt;
+}
+
+
+
+@media (max-device-width: 575px) {
+  .time-block:last-child {
+    display: none;
+  }
+
+  #ml p {
+    display: none;
+  }
+
+  body > header > div > div.text-center > div.reverse > div:nth-child(5) {
+    display: none;
+  }
+
+  .time-block {
+    margin: 0px 2px;
+    font-size: 18px;
+  }
+
+  .time-text {
+    font-size: 12px;
+  }
+}
