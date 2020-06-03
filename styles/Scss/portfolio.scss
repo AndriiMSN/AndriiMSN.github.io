@@ -1,6 +1,6 @@
 /*PORTFOLIO*/
 .portfolio {
-  @include block(90%, fit-content);
+  @include block(auto, fit-content);
   display: block;
   margin: 0 auto;
   background-color: $bg;
@@ -83,6 +83,32 @@ body > div.column.container > div.row.container {
       text-transform: uppercase;
       font-weight: bolder;
       letter-spacing: 5px;
+    }
+  }
+}
+
+.list-tech{
+  font-size: 1.7rem;
+  li+li{
+    margin-top: 20px;
+  }
+}
+
+.review-hold{
+  div{
+    margin-top: 40px;
+    &:before{
+      content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 95px solid white;
+    margin-top: -80px;
+    margin-left: 85%;
+    z-index: -2;
+    transform: rotate(20deg);
     }
   }
 }

@@ -162,7 +162,7 @@ function change(id, num, text1, text2, text3, text4) {
 
 $(document).ready(function changeText() {
   window.setInterval(function text() {
-    change("#h", 2, "час", "часа", "часов", "чаов");
+    change("#h", 2, "час", "часа", "часов", "чаcов");
   }, 10);
   //КОД СОКРАЩЕН -- ПЕРЕНЕСТИ В ОСТАЛЬНЫЕ!!!
   window.setInterval( function textDay(){
