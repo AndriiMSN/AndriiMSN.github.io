@@ -1,6 +1,6 @@
 timeend= new Date();
         
-timeend= new Date(2020,2,20,2,00);
+timeend= new Date(2050,2,20,2,00);
 
 async function time() {
     today = new Date();
