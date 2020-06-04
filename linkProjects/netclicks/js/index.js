@@ -9,8 +9,11 @@ const leftMenu = document.querySelector(".left-menu"),
       rating = document.querySelector(".rating"),
       description = document.querySelector(".description"),
       modalLink = document.querySelector(".modal__link"),
+      searchForm = document.querySelector(".search__form"),
+      searchFormInput = document.querySelector(".search__form-input"),
       IMG_URL = "https://image.tmdb.org/t/p/w185_and_h278_bestv2",
-      API_KEY = "692ed64981bf3db6ef20548c7a41ce46";
+      API_KEY = "692ed64981bf3db6ef20548c7a41ce46",
+      SERVER = "https://api.themoviedb.org/3";
       //https://api.themoviedb.org/3/movie/550?api_key=692ed64981bf3db6ef20548c7a41ce46
 
 //console.log(document.getElementsByTagName("div"));
@@ -38,18 +41,34 @@ const DBService = class {
     return this.getData("card.json");
   }
 
+  getSearchResult = (query) => {
+    return this.getData(`${SERVER}/search/movie?api_key=${API_KEY}&query=${query}&language=ru-RU&include_adult=true`)
+  }
+
+  getTvShow = id => {
+    return this.getData(`${SERVER}/movie/${id}?api_key=${API_KEY}&language=ru-Ru`)
+  }
+
 }
+
+//console.log( new DBService().getSearchResult('spider-man'))
 
 
 const renderCard = (response) => {
   tvShowsList.textContent = "";
+  console.log(response);
+  if(response.results.length == 0){
+    loading.remove();
+    document.querySelector('.tv-shows__head').innerText = 'Результат поиска - Не найдено';
+  }
 
   response.results.forEach((item) => {
     const {
       backdrop_path: backdrop,
-      name: title,
+      title: title,
       poster_path: poster,
       vote_average: vote,
+      id
     } = item;
     //console.log(item);
 
@@ -58,9 +77,10 @@ const renderCard = (response) => {
       voteElem = vote ? `<span class="tv-card__vote">${vote}</span>` : "";
 
     const card = document.createElement("li");
+    card.idTV = id;
     card.classList.add("tv-shows__item");
     card.innerHTML = `
-    <a href="#" class="tv-card">
+    <a href="#" id="${id}" class="tv-card">
       ${voteElem}
       <img class="tv-card__img"
         src="${posterIMG}"
@@ -75,10 +95,26 @@ const renderCard = (response) => {
   });
 };
 
-{
-  tvShows.append(loading);
-  new DBService().getTestData().then(renderCard);
-}
+
+
+//SearchForm
+window.onload = () => {new DBService().getSearchResult('spider').then(renderCard);}
+searchForm.addEventListener("submit", event => {
+
+  event.preventDefault();
+  //console.dir(searchForm);
+  const value = searchFormInput.value.trim();
+  //searchFormInput.value = '';
+  if ( value ) {
+
+    tvShows.append(loading);
+    new DBService().getSearchResult(value).then(renderCard);
+    
+  }
+  console.log(value);
+
+});
+
 // MENU
 
 // open menu
@@ -104,6 +140,7 @@ document.addEventListener("click", (event) => {
 //DropDown menu
 
 leftMenu.addEventListener("click", (event) => {
+  event.preventDefault();
   const target = event.target,
     dropdown = target.closest(".dropdown");
 
@@ -117,13 +154,16 @@ leftMenu.addEventListener("click", (event) => {
 //open modal
 
 tvShowsList.addEventListener("click", (event) => {
+
+  document.querySelector('body').append(loading);
   event.preventDefault();
+
   const target = event.target,
-    card = target.closest(".tv-card");
+        card = target.closest(".tv-card");
 
   if (card) {
-      
-      new DBService().getTestCard()
+      //console.dir(card);
+      new DBService().getTvShow(card.id)
         .then( data => {
 
       console.log(data);
@@ -132,17 +172,20 @@ tvShowsList.addEventListener("click", (event) => {
       modalTitle.textContent = data.name;
       //genresList.innerHTML = data.genres.reduce( (acc, item) =>  `${acc}<li>${item.name}</li>`, '')
       genresList.textContent = '';
-      for ( const item of data.genres) {
+      for ( const item of data.genres) { // data.genres.forEach(item=>){}
         genresList.innerHTML += `<li>${item.name}</li>`;
       }
-      rating
-      description
-      modalLink
-    });
+      rating.textContent = data.vote_average;
+      description.textContent = data.overview;
+      modalLink.href = data.homepage;
+    })
 
-
+    .then(() => {
     document.body.style.overflow = "hidden";
     modal.classList.remove("hide");
+    loading.remove();
+    })
+
   }
 
   //console.log(target);
