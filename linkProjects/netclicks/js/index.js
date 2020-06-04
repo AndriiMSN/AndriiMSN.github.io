@@ -59,9 +59,9 @@ const renderCard = (response) => {
   console.log(response);
   if(response.results.length == 0){
     loading.remove();
-    document.querySelector('.tv-shows__head').innerText = 'Результат поиска - Не найдено';
-  }
-
+    document.querySelector('.tv-shows__head').innerText = 'Результат поиска - Не найденyо';
+  } else{
+  document.querySelector('.tv-shows__head').innerText = 'Результат поиска';}
   response.results.forEach((item) => {
     const {
       backdrop_path: backdrop,
