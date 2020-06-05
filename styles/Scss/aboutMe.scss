@@ -3,7 +3,9 @@
   margin-left: auto;
   margin-right: auto;
   @include block(auto, fit-content);
-
+  p{
+    font-size: 1.5rem;
+  }
   .about-block {
     padding: 20px;
     color: $color;
@@ -18,55 +20,7 @@
       font-size: 1.7rem;
     }
   }
-
-  .social {
-    min-height: 70px;
-
-    a {
-      font-size: 45px;
-    }
-
-    a > i {
-      transition: all 0.2s;
-    }
-
-    a > i:hover {
-      transform: rotate(20deg) scale(1.1);
-      font-size: 60px;
-      transition: all 0.2s;
-    }
-
-    > div:nth-child(1) > a {
-      color: blue;
-    }
-
-    > div:nth-child(2) > a {
-      color: rgb(202, 91, 110);
-    }
-
-    > div:nth-child(4) > a {
-      color: red;
-    }
-
-    > div:nth-child(5) > a {
-      color: purple;
-    }
-
-    > div:nth-child(6) > a {
-      color: green;
-    }
-  }
-}
-
-.my-ava {
-  max-width: 200px;
-  width: inherit;
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-}
-
-/*TIMER*/
+  /*TIMER*/
 .reverse {
   text-align: center;
   box-sizing: border-box;
@@ -92,6 +46,59 @@
   font-size: 18px;
   background: $darksalt;
 }
+
+}
+.social {
+  position: fixed;
+  div{
+    position: relative;
+    margin-left: 10px;
+  }
+  div+div{
+    margin-top: 10px;
+  }
+  a {
+    font-size: 45px;
+  }
+
+  a > i {
+    transition: all 0.2s;
+  }
+
+  a > i:hover {
+    transform: rotate(20deg);
+    transition: all 0.2s;
+  }
+
+  > div:nth-child(1) > a {
+    color: blue;
+  }
+
+  > div:nth-child(2) > a {
+    color: rgb(202, 91, 110);
+  }
+
+  > div:nth-child(4) > a {
+    color: red;
+  }
+
+  > div:nth-child(5) > a {
+    color: purple;
+  }
+
+  > div:nth-child(6) > a {
+    color: green;
+  }
+}
+.my-ava {
+  max-width: 200px;
+  width: inherit;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+
 
 
 

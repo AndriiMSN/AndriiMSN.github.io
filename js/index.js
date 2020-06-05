@@ -42,7 +42,7 @@ $(window).scroll(function () {
   wh = window.innerHeight; // Высота видимой части
   let blockTop = $(".html.row").offset().top; // Получаем отступ блока
   x = $(window).scrollTop();
-  if (blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 10)) {
+  if (blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 30)) {
     Circle("#circle", 0.99);
     Circle("#circle1", 0.89);
     Circle("#circle2", 0.68);
@@ -92,7 +92,7 @@ function MyCount(a) {
         counter(); // Запускаем что надо
       }
     } */
-    if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 10)) {
+    if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 30)) {
       // Если флаг позволяет запустить таймер и скролл дошёл
       flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
       counter._count = 0;
