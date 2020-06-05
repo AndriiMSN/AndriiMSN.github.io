@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   @include block(auto, fit-content);
-  p{
+  p {
     font-size: 1.5rem;
   }
   .about-block {
@@ -21,40 +21,69 @@
     }
   }
   /*TIMER*/
-.reverse {
-  text-align: center;
-  box-sizing: border-box;
-  margin: 10px auto;
-  width: 80%;
-  color: $color;
-  font-weight: bold;
-  background: $color;
-  border-radius: 5px;
-}
+  .reverse {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 80%;
+    color: $color;
+    font-weight: bold;
+    background: $color;
+    border-radius: 5px;
+    @media (max-width:991.98px) {
+      width: 100%;
+    }
+  }
 
-.time-text {
-  font-size: 18px;
-  margin: 5px 0 0;
-}
+  .time-text {
+    font-size: 18px;
+    margin: 5px 0 0;
+    @media (max-width:991.98px) {
+      font-size: 14px;
+    }
+  }
 
-.time-block {
-  padding: 5px 5px;
-  border: 1px solid black;
-  max-width: 250px;
-  width: 19%;
-  height: auto;
-  font-size: 18px;
-  background: $darksalt;
-}
-
+  .time-block {
+    padding: 5px 5px;
+    border: 1px solid black;
+    max-width: 250px;
+    width: 20%;
+    height: auto;
+    font-size: 18px;
+    background: $darksalt;
+  }
 }
 .social {
-  position: fixed;
-  div{
-    position: relative;
-    margin-left: 10px;
+  width: 70px;
+  transition:width .4s;
+  p{
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: all 2s;transition: none;
+    
+    font-size: 18px;
+    margin-left: 65px;
   }
-  div+div{
+  &:hover{
+    width: 320px;
+    p{visibility: visible;
+      opacity: 1;transition: visibility 1s linear, opacity 1.5s linear;}
+  }
+  
+  z-index: 10;
+  position: fixed;
+  margin-top: -10px;
+  height: 100%;
+  background: rgba(255, 255, 255);
+  div {
+    position: relative;
+    margin: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  div + div {
     margin-top: 10px;
   }
   a {
@@ -65,7 +94,7 @@
     transition: all 0.2s;
   }
 
-  a > i:hover {
+  a:hover i{
     transform: rotate(20deg);
     transition: all 0.2s;
   }
@@ -97,10 +126,6 @@
   margin: auto;
   border-radius: 50%;
 }
-
-
-
-
 
 @media (max-device-width: 575px) {
   .time-block:last-child {

@@ -17,23 +17,40 @@
   margin: 0 20px;
   text-align: center;
   border-left-width: 1px !important;
+  @media (max-width:991.98px) {
+    margin: 0;
+  }
 }
 
 .list-group div {
   width: max-content;
   padding: 0 40px;
+  @media (max-width:991.98px) {
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .list-group-item {
   width: max-content;
   font-size: 1rem;
+  @media (max-width:991.98px) {
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+  }
 }
 
 .list-group-item.active {
   background: $darksalt;
   border: 1px solid #e6e6e6 !important;
-  margin: 0 20px !important;
+  margin: 0 20px;
   width: max-content !important;
+  @media (max-width:991.98px) {
+    margin: 0;
+  }
 }
 
 body > div.column.container > div.row.container {
@@ -61,7 +78,7 @@ body > div.column.container > div.row.container {
 
 .holding {
   .holding-img-title {
-    -webkit-filter: blur(1.5px);
+    -webkit-filter: blur(16.5px);
     filter: blur(1.5px);
   }
 

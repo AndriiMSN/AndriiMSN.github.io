@@ -1,4 +1,9 @@
-$bg: #242526;
+$bg: #383b3d;
 $color: #c9cbce;
-$boxshadow: 0px 16px 48px -20px white;
+$boxshadow: 0px 16px 48px -20px rgb(0, 0, 0);
 $darksalt: #0f1b27;
+
+body{
+  background: url('../../img/bg.jpg') fixed;
+  background-size: cover;
+}

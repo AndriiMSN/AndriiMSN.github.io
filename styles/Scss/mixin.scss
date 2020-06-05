@@ -5,7 +5,7 @@
 }
 
 @mixin block($width, $height) {
-  border: 10px solid rgb(0, 0, 0);
+  border: 5px solid rgb(255, 255, 255);
   padding: 5px;
   width: $width;
   @include shadow();
