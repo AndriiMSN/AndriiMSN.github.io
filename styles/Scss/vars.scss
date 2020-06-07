@@ -3,7 +3,27 @@ $color: #c9cbce;
 $boxshadow: 0px 16px 48px -20px rgb(0, 0, 0);
 $darksalt: #0f1b27;
 
-body{
-  background: url('../../img/bg.jpg') fixed;
+body {
+  background: url("../../img/bg.jpg") fixed;
   background-size: cover;
+  padding: 0 !important;
+}
+h1 {
+  font-size: 30px;
+}
+.modal-open {
+  overflow: scroll;
+  padding: 0 !important;
+}
+.modal-backdrop.show {
+  display: none;
+}
+.modal-lg,
+.modal-xl {
+  max-width: 80%;
+  cursor: auto;
+}
+.modal-open .modal {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: zoom-out;
 }

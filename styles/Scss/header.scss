@@ -4,10 +4,12 @@ header {
   color: $color;
   position: fixed;
   z-index: 10;
-  width: 100%;
-  bottom: 0;
+  width: calc(100% - 70px);
+  top: 0;
+  right: 0;
+  z-index: 5;
   border: 2px dotted white;
-
+  box-sizing: content-box;
   nav {
     display: block;
     width: 100%;
@@ -17,7 +19,7 @@ header {
 
       li {
         margin-top: 15px;
-        font-size: 30px;
+        font-size: 18px;
 
         a {
         }

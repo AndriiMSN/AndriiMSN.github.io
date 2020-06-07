@@ -147,7 +147,7 @@ function change(id, num, text1, text2, text3, text4) {
   var str = String(x);
   var q = str[str.length - 1];
   var i = str[str.length - 2];
-  var y = document.querySelector('div.reverse > div:nth-child('+num+') > p');
+  var y = document.querySelector('div.reverse > div:nth-child(' + num + ') > p');
   if (q == "1") {
     y.innerText = `${text1}`;
   } else if (q == "2" || q == "3" || q == "4") {
@@ -155,7 +155,7 @@ function change(id, num, text1, text2, text3, text4) {
   } else {
     y.innerText = `${text3}`;
   }
-  if (i == "1"){
+  if (i == "1") {
     y.innerText = `${text4}`;
   }
 }
@@ -165,7 +165,7 @@ $(document).ready(function changeText() {
     change("#h", 2, "час", "часа", "часов", "чаcов");
   }, 10);
   //КОД СОКРАЩЕН -- ПЕРЕНЕСТИ В ОСТАЛЬНЫЕ!!!
-  window.setInterval( function textDay(){
+  window.setInterval(function textDay() {
     change("#d", 1, "день", "дня", "дней", "дней")
   }, 10);
 
@@ -176,4 +176,30 @@ $(document).ready(function changeText() {
   window.setInterval(function textSecund() {
     change("#s", 4, "секунда", "секунды", "секунд", "секунд");
   }, 10);
+});
+
+const mMenu = document.querySelector('.m-menu'),
+  social = document.querySelector('.social');
+mMenu.addEventListener('click', () => {
+  social.classList.toggle('active');
+  mMenu.classList.toggle('active');
+})
+document.addEventListener('click', (event) => {
+  if (!event.target.closest(".social")) {
+
+    mMenu.classList.remove("active");
+    social.classList.remove("active");
+  }
+});
+$('a[data-modal]').click(function (event) {
+  $(this).modal({
+    fadeDuration: 100
+  });
+  if ($(this).find('img')) {
+    $img = $(this).find('img');
+    $($(this).attr('href')).find('img').attr('src', $img.attr('src'));
+    $(this).find('img') = $img;
+  } else {
+    return false;
+  }
 });
