@@ -8,9 +8,20 @@ body {
   background-size: cover;
   padding: 0 !important;
   margin-left: 70px;
+  @media (max-width: 575.98px) {
+    margin-left: 0;
+  }
 }
 h1 {
   font-size: 30px;
+  @media (max-width: 575.98px) {
+    font-size: 1.5rem;
+  }
+}
+h2 {
+  @media (max-width: 575.98px) {
+    font-size: 1.6rem;
+  }
 }
 .modal-open {
   overflow: scroll;
@@ -21,7 +32,7 @@ h1 {
 }
 .modal-lg,
 .modal-xl {
-  max-width: 80%;
+  max-width: 95%;
   cursor: auto;
 }
 .modal-open .modal {
