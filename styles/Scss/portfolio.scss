@@ -133,8 +133,14 @@ body > div.column.container > div.row.container {
 
 .list-tech {
   font-size: 1.7rem;
+  @media (max-width: 575.98px) {
+    font-size: 1rem;
+  }
   li + li {
     margin-top: 20px;
+    @media (max-width: 575.98px) {
+      margin-top: 5px;
+    }
   }
 }
 
