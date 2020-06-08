@@ -100,10 +100,10 @@
       <div class="row">
         <nav>
           <ul class="row justify-content-around text-center">
-            <li><a href="">Про меня</a></li>
-            <li><a href="">Мои навыки</a></li>
-            <li><a href="">Мои работы</a></li>
-            <li><a href="">Сертификаты</a></li>
+            <li><a href="#about">Про меня</a></li>
+            <li><a href="#skills">Мои навыки</a></li>
+            <li><a href="#portfolio">Мои работы</a></li>
+            <li><a href="#certificate">Сертификаты</a></li>
           </ul>
         </nav>
         <div class="change-lang row" style="margin-top: 800px;">
@@ -127,7 +127,7 @@
       </div>
     </div>
   </header>
-  <section class="column container f-section">
+  <section id="about" class="column container f-section">
     <div class="mt-5  about">
       <div class="about-block column">
         <div class="row">
@@ -179,7 +179,7 @@
       <button class="arrow"><i class="fas fa-arrow-circle-down"></i></button>
     </div>
     <div class="my-skills mt-4" id="skills">
-      <h1 class="text-center scrolltop">Мои навыки</h1>
+      <h1 class="text-center scrolltop mt-3">Мои навыки</h1>
       <div class="row mt-5 justify-content-center pb-4">
         <div class="html row col-md-4">
           <p><img src="img/html.png" alt=""></p>
@@ -243,8 +243,131 @@
       <button class="arrow"><i class="fas fa-arrow-circle-down"></i></button>
     </div>
   </section>
-  <section class="container" style="margin-bottom: 200px;">
+  <section class="container" id="portfolio" style="margin-bottom: 200px;">
     <div class="portfolio mt-4 container">
+      <div class="container">
+        <h1 class="text-center mt-4">Соц сеть</h1>
+        <div class="column mt-5">
+          <div class="row switch container">
+            <div class="list-group list-group-horizontal justify-content-center" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home4-list" data-toggle="list"
+                href="#list-home4" role="tab" aria-controls="1" aria-selected="true">
+                <div>Превью</div>
+              </a>
+
+              <a class="list-group-item list-group-item-action" id="list-profile4-list" data-toggle="list"
+                href="#list-profile4" role="tab" aria-controls="2" aria-selected="false">
+                <div class="">Фото</div>
+              </a>
+
+              <a class="list-group-item list-group-item-action" id="list-messages4-list" data-toggle="list"
+                href="#list-messages4" role="tab" aria-controls="3" aria-selected="false">
+                <div class="">Технологии</div>
+              </a>
+            </div>
+          </div>
+          <div class="container-fluid mt-5 pb-5">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade active show" id="list-home4">
+                <div
+                  class="swiper-container videos instance-0 swiper-container-initialized swiper-container-horizontal">
+                  <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active">
+                      <div class="row holding">
+                        <div class="col-md-12">
+                          <img src="img/social.png" alt="" class="holding-img-title" style="width: 100%;">
+                          <a href="./linkProjects/Social/index.html" target="_blank">
+                            <div class="link">
+                              <div>
+                                <p>ПЕРЕЙТИ</p>
+                              </div>
+                            </div>
+                        </div> </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Add Pagination 
+                <div class="swiper-button-next btn-next-0" tabindex="0" role="button" aria-label="Next slide"
+                  aria-disabled="false"></div>
+                <div class="swiper-button-prev btn-prev-0 swiper-button-disabled" tabindex="0" role="button"
+                  aria-label="Previous slide" aria-disabled="true"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>-->
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="list-profile4">
+                <div
+                  class="swiper-container messages instance-1 swiper-container-initialized swiper-container-horizontal">
+                  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-next" style="width:auto;">
+                      <a href="#myModal" data-modal="" data-toggle="modal" data-target="#myModal" class="myModal"><img
+                          src="./img/social.png" alt="sug"></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width:auto;">
+                      <a href="#myModal" data-toggle="modal" data-target="#myModal" class="myModal" data-modal=""><img
+                          src="./img/social1.png" alt="sug"></a>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-button-next btn-next-1" tabindex="0" role="button" aria-label="Next slide"
+                    aria-disabled="false"></div>
+                  <div class="swiper-button-prev btn-prev-1 swiper-button-disabled" tabindex="0" role="button"
+                    aria-label="Previous slide" aria-disabled="true"></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-messages4">
+                <div
+                  class="swiper-container messages instance-2 swiper-container-initialized swiper-container-horizontal">
+                  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active" style="width:auto;">
+                      <div class="row text-center">
+                        <div>
+                          <ul class="list-tech">
+                            <li>HTML/ CSS</li>
+                            <li>SVG </li>
+                            <li>CSS FLEX</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Add Pagination 
+                  <div class="swiper-button-next btn-next-2" tabindex="0" role="button" aria-label="Next slide"
+                    aria-disabled="false"></div>
+                  <div class="swiper-button-prev btn-prev-2 swiper-button-disabled" tabindex="0" role="button"
+                    aria-label="Previous slide" aria-disabled="true"></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>-->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-test4" role="tabpanel" aria-labelledby="list-test3-list">
+                <div style="overflow:visible"
+                  class="swiper-container messages instance-2 swiper-container-initialized swiper-container-horizontal">
+                  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active" style="width:auto;">
+                      <div class="review-hold">
+                      </div>
+                    </div>
+
+                    <!-- Add Pagination 
+                  <div class="swiper-button-next btn-next-2" tabindex="0" role="button" aria-label="Next slide"
+                    aria-disabled="false"></div>
+                  <div class="swiper-button-prev btn-prev-2 swiper-button-disabled" tabindex="0" role="button"
+                    aria-label="Previous slide" aria-disabled="true"></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-block">
+        <button class=" arrow arrow-port"><i class="fas fa-arrow-circle-down"></i></button>
+      </div>
       <div class="container">
         <h1 class="text-center mt-4">Сайт поиска фильмов</h1>
         <div class="column mt-5">

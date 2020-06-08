@@ -216,3 +216,11 @@ $(nav).on('click', function (e) {
     scrollTop: x + 20
   }, 1000);
 });
+
+var $page = $('html, body');
+$('header a[href*="#"]').click(function () {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 75
+  }, 900);
+  return false;
+});

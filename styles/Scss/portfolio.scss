@@ -1,14 +1,10 @@
 /*PORTFOLIO*/
 .portfolio {
   @include block(auto, fit-content);
-  overflow: visible;
   display: block;
   margin: 0 auto;
   background-color: $bg;
   color: $color;
-  &::before {
-    content: none;
-  }
   .myModal {
     cursor: zoom-in;
   }
@@ -85,6 +81,9 @@ body > div.column.container > div.row.container {
 }
 .swiper-slide {
   max-height: 390px;
+  @media (max-width: 575.98px) {
+    max-height: 205px;
+  }
 }
 .swiper-slide img,
 .swiper-slide video,

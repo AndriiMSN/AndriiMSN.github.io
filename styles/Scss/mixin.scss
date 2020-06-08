@@ -5,7 +5,7 @@
 }
 
 @mixin block($width, $height) {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
   padding: 5px;
   width: $width;
   max-width: 1000px;
@@ -34,10 +34,10 @@
     background-repeat: no-repeat;
     background-size: 50% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient($darksalt, $darksalt),
-      linear-gradient($color, $darksalt), linear-gradient($darksalt, $darksalt),
-      linear-gradient($color, $color);
-    animation: rotate 164s linear infinite;
+    background-image: linear-gradient(aquamarine, aquamarine),
+      linear-gradient(blue, aquamarine), linear-gradient(aquamarine, blue),
+      linear-gradient(blue, blue);
+    animation: rotate 64s linear infinite;
   }
 
   &::after {
