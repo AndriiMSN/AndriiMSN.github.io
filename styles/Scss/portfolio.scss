@@ -1,12 +1,20 @@
 /*PORTFOLIO*/
 .portfolio {
   @include block(auto, fit-content);
+  overflow: visible;
   display: block;
   margin: 0 auto;
   background-color: $bg;
   color: $color;
+  &::before {
+    content: none;
+  }
   .myModal {
     cursor: zoom-in;
+  }
+  .container {
+    max-height: 600px;
+    overflow-y: hidden;
   }
 }
 

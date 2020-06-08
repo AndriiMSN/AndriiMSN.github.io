@@ -8,6 +8,7 @@
   border: 5px solid rgb(255, 255, 255);
   padding: 5px;
   width: $width;
+  max-width: 1000px;
   @include shadow();
 
   @keyframes rotate {

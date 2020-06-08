@@ -54,11 +54,11 @@ $(window).scroll(function () {
 
 /*MAIN */
 function MyCount(a) {
-  console.log("Элемент по счету - " + a); // Выводим в кконсоль элемент по счету
+  //console.log("Элемент по счету - " + a); // Выводим в кконсоль элемент по счету
   var txt = parseInt(
     document.querySelector(".html:nth-child(" + a + ")  span").innerText
   );
-  console.log("Числовое знчение - " + txt); //Выводим в консоль числовое значение элемента
+  //console.log("Числовое знчение - " + txt); //Выводим в консоль числовое значение элемента
   let blockTop = $(".html.row").offset().top, // Получаем отступ блока
     wh = window.innerHeight, // Высота видимой части
     flag = true, // Флаг активации
@@ -98,8 +98,8 @@ function MyCount(a) {
       counter._count = 0;
       counter(); // Запускаем что надо
     }
-    console.log("blockTOP  " + blockTop);
-    console.log("2- " + x + wh / 2 + "\n3- " + x + (wh / 2 - 10));
+    //console.log("blockTOP  " + blockTop);
+    //console.log("2- " + x + wh / 2 + "\n3- " + x + (wh / 2 - 10));
   });
 }
 
@@ -202,4 +202,17 @@ $('a[data-modal]').click(function (event) {
   } else {
     return false;
   }
+});
+
+
+
+
+var nav = $('.arrow');
+
+
+$(nav).on('click', function (e) {
+  e.preventDefault(); var wh = window.innerHeight; var x = $(this).offset().top
+  $('html, body').animate({
+    scrollTop: x + 20
+  }, 1000);
 });
