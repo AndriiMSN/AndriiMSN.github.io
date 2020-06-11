@@ -1,0 +1,8 @@
+.certif {
+  @include block(auto, fit-content);
+  background-color: $bg;
+  color: $color;
+  .swiper-slide {
+    max-height: 100%;
+  }
+}

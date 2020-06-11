@@ -1,25 +1,13 @@
-
-
-
 @import "./Scss/vars.scss";
 
 @import "./Scss/mixin.scss";
 
-@import './Scss/header.scss';
+@import "./Scss/header.scss";
 
-@import './Scss/aboutMe.scss';
+@import "./Scss/aboutMe.scss";
 
-@import './Scss/skills.scss';
+@import "./Scss/skills.scss";
 
-@import './Scss/portfolio.scss';
+@import "./Scss/portfolio.scss";
 
-body {
-  background-color: #242526;
-  color: $color;
-}
-
-
-
-
-
-
+@import "./Scss/certif.scss";
