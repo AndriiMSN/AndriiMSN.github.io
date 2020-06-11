@@ -25,18 +25,22 @@ $(".swiper-container").each(function (index, element) {
     },
     breakpoints: {
       0: {
+        effect: 'slide',
         slidesPerView: 1,
         spaceBetween: 0
       },
       320: {
+        effect: 'slide',
         slidesPerView: 1,
         spaceBetween: 0
       },
       575: {
+        effect: 'slide',
         slidesPerView: 1
       },
 
       768: {
+        effect: 'slide',
         slidesPerView: 1,
         spaceBetween: 10
       },
