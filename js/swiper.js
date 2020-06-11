@@ -9,12 +9,13 @@ $(".swiper-container").each(function (index, element) {
   var swiper = new Swiper(".instance-" + index, {
     slidesPerView: 1,
     spaceBetween: 30,
+    speed: 500,
     observer: true,
     observeParents: true,
     effect: 'coverflow',
     coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
+      rotate: 60,
+      stretch: 400,
       depth: 100,
       modifier: 1,
       slideShadows: false,
