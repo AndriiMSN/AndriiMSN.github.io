@@ -108,7 +108,7 @@ timeend = new Date();
 
 timeend = new Date(2019, 11, 1, 00, 00);
 
-async function time() {
+function time() {
   today = new Date();
   today = Math.floor((today - timeend) / 1);
   /*if (today < timeend) {
@@ -141,6 +141,7 @@ async function time() {
   document.getElementById("s").innerHTML = timesec;
   window.setTimeout("time()", 10);
 }
+setInterval(time(), 10)
 
 function change(id, num, text1, text2, text3, text4) {
   var x = document.querySelector(id).innerText;
