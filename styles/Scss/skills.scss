@@ -50,7 +50,9 @@
     #circle2,
     #circle3,
     #circle4,
-    #circle5 {
+    #circle5,
+    #circle6,
+    #circle7 {
       position: relative;
       margin-left: 25px;
       margin-top: -30px;
@@ -67,7 +69,9 @@
     }
     #circle3,
     #circle4,
-    #circle5 {
+    #circle5,
+    #circle6,
+    #circle7 {
       @media (max-width: 991.98px) {
         border-bottom: none;
       }
@@ -85,6 +89,12 @@
       transform: translate(-48%, -65%);
       @media (max-width: 991.98px) {
         transform: translate(-48%, -53%);
+      }
+    }
+    #circle6,
+    #circle7 {
+      .circle-text {
+        transform: translate(-50%, -44%);
       }
     }
   }

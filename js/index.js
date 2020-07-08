@@ -36,6 +36,8 @@ $(document).ready(function () {
   Circle("#circle3", 0.54);
   Circle("#circle4", 0.76);
   Circle("#circle5", 0.94);
+  Circle("#circle6", 0.42);
+  Circle("#circle7", 0.61);
 });
 
 $(window).scroll(function () {
@@ -49,6 +51,8 @@ $(window).scroll(function () {
     Circle("#circle3", 0.54);
     Circle("#circle4", 0.76);
     Circle("#circle5", 0.94);
+    Circle("#circle6", 0.42);
+    Circle("#circle7", 0.61);
   }
 });
 
