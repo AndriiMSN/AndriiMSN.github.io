@@ -134,9 +134,14 @@ body {
 }
 .header-icon {
   fill: #002766;
+  transition: all 0.1s;
+  transform-origin: 50% 50%;
 }
 .header-icon:hover {
-  fill: #ffffff;
+  fill: #db1414;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  transform: scale(1.2);
 }
 /*Side-left*/
 .container {
