@@ -2,38 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<style>
-    #table table {
-        margin: 0 auto;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replace</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="formatTG.js" defer></script>
+  <style>
+    body {
+      font-size: 25px !important
     }
-</style>
 
-<body>
-    <div class="block text-center">
-        <h1>Список покупок</h1>
-        <div class="total mt-2">Необходимые расходы <span id="total"></span></div>
-        <div id="table"></div>
-        <div id="form" class="frm">
-            <div class="frm-content mt-2">
-                <div class="input-form mt-2">
-                    <input type="text" id="product" class="input_el mr-2" placeholder="Назание">
-                    <input type="text" id="nmbr" class="input_el mr-2" placeholder="Количество">
-                    <input type="text" id="price" class="input_el mr-2" placeholder="Цена"
-                        onkeydown="checkForEnter(event)">
-                </div>
-                <button onclick="addItem();" class="btn_frm mt-2">Добавить</button>
-                <p id="err"></p>
-            </div>
-        </div>
+    textarea {
+      font-size: 20px !important
+    }
+  </style>
+</head>
 
-    </div>
+<body class="container-fluid row">
+  <div class="form-group col-md-6">
+    <label for="primaryCode">Введите код</label>
+    <textarea class="form-control" id="primaryCode" rows="15"></textarea>
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="edited">Результат</label>
+    <textarea class="form-control" id="edited" rows="15"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3" style="width: 80%; margin: auto; display: block;">Format</button>
 </body>
-<script src="./index.js"></script>
 
 </html>
