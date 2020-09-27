@@ -1,0 +1,25 @@
+.swiper-slide .item .img img {
+  width: 100%;
+}
+.swiper-slide .item .description {
+  margin: 22px 29px 23px 28px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.swiper-slide .item .description strong {
+  margin-right: 9px;
+}
+.swiper-slide .item .description a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-right: 5px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

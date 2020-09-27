@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../styles/scss/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../styles/css/main.css">
+  <link rel="stylesheet" href="../styles/css/modal.css">
+  <link rel="stylesheet" href="../styles/css/Slider.css">
+  <link rel="stylesheet" href="../styles/css/SliderBar.css">
+  <link rel="stylesheet" href="../styles/css/SliderTop.css">
+  <link rel="stylesheet" href="../styles//css/footer.css">
+
+
+  <style>
+    .links-pages {
+      display: flex;
+      justify-content: center;
+      margin: 50px auto;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .links-pages div {
+      width: 250px;
+      padding: 10px 20px;
+      font-size: large;
+    }
+
+    .show-hw {
+      display: flex !important;
+    }
+
+    @media (min-width: 1049px) {
+      .show-hw {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="links-pages">
+    <div><a href="./checkin_2.html" target="_blank">Chekin-modal-2</a></div>
+    <div><a href="./checkin_3.html" target="_blank">Checkin-modal-3</a></div>
+    <div><a href="./result_search.html" target="_blank">Result-search</a></div>
+    <div><a href="./settings/setting-1.html" target="_blank">Setiing-pc-1</a></div>
+    <div><a href="./settings/setting-2.html" target="_blank">Setiing-pc-2</a></div>
+    <div><a href="./settings/setting-3.html" target="_blank">Setiing-pc-3</a></div>
+    <div><a href="./settings/setting-4.html" target="_blank">Setiing-pc-4</a></div>
+    <div><a href="./settings/setting-5.html" target="_blank">Setiing-pc-5</a></div>
+    <div><a href="./settings/setting-6.html" target="_blank">Setiing-pc-6</a></div>
+    <div><a href="./settings/setting-7.html" target="_blank">Setiing-pc-7</a></div>
+  </div>
+  <div class="modal modal-enter hide">
+    <div class="container-modal">
+      <div class="header-second"><span class="header-second-title">Авторизация</span></div>
+      <div class="container container--narrow">
+
+        <form>
+          <div class="row align-items-end">
+            <div class="col-12 col-md-6">
+              <div class="form-field form-field--error">
+                <label class="label" for="email">Электронная почта</label>
+                <span class="error-msg">Ошибка валидации</span>
+                <input class="input" type="email" name="email" id="email" placeholder="E-Mail" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-field">
+                <label class="label" for="password">Пароль</label>
+                <span class="error-msg"></span>
+                <input class="input" type="password" name="password" id="password" placeholder="Пароль" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-block">
+            <div class="social-item"><a href="#"><img src="../img/google.svg" alt="google"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/facebook.svg" alt="facebook"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/twitter.svg" alt="twitter"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/linkedin.svg" alt="linkedin"></a></div>
+          </div>
+
+
+          <div class="button-field">
+            <span class="button">Вход</span></div>
+
+
+          <div class="button-field">
+            <span class="button cansel">Отмена</span></div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-register hide">
+    <div class="container-modal">
+      <div class="header-second"><span class="header-second-title">Регистрация</span></div>
+      <div class="progress-bar w-33"></div>
+      <div class="container container--narrow">
+        <form>
+          <div class="row align-items-end">
+            <div class="col-12 col-md-6">
+              <div class="form-field form-field--error">
+                <label class="label" for="email">Электронная почта</label>
+                <span class="error-msg">Ошибка валидации</span>
+                <input class="input" type="email" name="email" id="email" placeholder="E-Mail" required>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-end">
+            <div class="col-12 col-md-6">
+              <div class="form-field">
+                <label class="label" for="password">Пароль</label>
+                <span class="error-msg"></span>
+                <input class="input" type="password" name="password" id="password" placeholder="Пароль" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-field">
+                <label class="label" for="password-repeat">Повторите пароль</label>
+                <span class="error-msg"></span>
+                <input class="input" type="password" name="password" id="password-repeat" placeholder="Пароль" required>
+              </div>
+            </div>
+          </div>
+          <div class="social-block">
+            <div class="social-item"><a href="#"><img src="../img/google.svg" alt="google"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/facebook.svg" alt="facebook"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/twitter.svg" alt="twitter"></a></div>
+            <div class="social-item"><a href="#"><img src="../img/linkedin.svg" alt="linkedin"></a></div>
+          </div>
+          <div class="button-field">
+            <span class="button">Далее</span></div>
+
+          <div class="button-field">
+            <span class="button cansel">Отмена</span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-menu">
+    <div class="close">
+      <button>
+        <img src="../img/closeBut.png" alt="">
+      </button>
+    </div>
+    <div class="user-name">
+      <img src="../img/userAvatar.png" alt="">
+      <p>Василей Васильев</p>
+    </div>
+
+    <div class="link enter"><a href="#">Войти</a></div>
+    <div class="link register"><a href="#">Регистрация</a></div>
+    <div class="select">
+      <select name="language" id="">
+        <option value="Русский">Русский</option>
+        <option value="English">English</option>
+      </select>
+    </div>
+  </div>
+  <!-- /.mob-menu -->
+
+
+  <section class="main_block">
+    <div class="nav-panel-mob">
+      <div class="logo">
+        <img src="../img/free_horizontal_on_white_by_logaster-removebg-preview 23.png" alt="">
+      </div>
+      <div class="burger-button">
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="bg-opacity">
+      <div class="container-main">
+
+        <div class="nav-panel">
+          <div class="logo">
+            <img src="../img/free_horizontal_on_white_by_logaster-removebg-preview 23.png" alt="">
+          </div>
+          <!-- /.logo -->
+          <div class="right-panel">
+            <div class="search">
+              <label for="" class="search-label">
+                <input type="text" name="" id="search" autocomplete="off" placeholder="ПОИСК">
+                <div class="search-icon">
+                  <img src="../img/search-icon.png" alt="">
+                </div>
+                <!-- /.search-icon -->
+              </label>
+              <!-- /.search-label -->
+            </div>
+            <!-- /.search -->
+            <div class="buttons">
+              <button class="nav-button enter">Войти</button>
+              <button class="nav-button register">Регистрация</button>
+            </div>
+            <!-- /.buttons -->
+          </div>
+          <!-- /.right-panel -->
+        </div>
+        <!-- /.nav-panel -->
+        <div class="text-content">
+          <h1 class="h1 white desktop">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне
+          </h1>
+          <h1 class="h1 white mobile">
+            Lorem Ipsum - это текст-"рыба"
+          </h1>
+          <p class="text white">
+            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
+            используют потому, что тот обеспечивает более
+          </p>
+          <div class="buttons">
+            <button class="button-fill">Найти работу</button>
+            <button class="button-fill">Найти музыканта</button>
+          </div>
+        </div>
+        <!-- /.text-content -->
+      </div>
+    </div>
+  </section>
+  <!-- /.main_block -->
+
+  <section class="second-block">
+    <div class="container-main">
+      <h1 class="h1 text-center">
+        Как мы работаем<img src="../img/howWeWork/title.png" alt="">
+      </h1>
+
+      <div class="steps-block">
+        <div class="steps-top">
+          <div class="step start right">
+            <div class="">
+              <img src="../img/howWeWork/register.png" alt="">
+              <p>Зарегестрируйся</p>
+            </div>
+          </div>
+          <div class="step down right">
+            <div class="">
+              <img src="../img/howWeWork/plus1.png" alt="">
+              <p>Cоздай группу для бара или музыканта</p>
+            </div>
+          </div>
+          <div class="step right">
+            <div class="">
+              <img src="../img/howWeWork/search.png" alt="">
+              <p>Найти предложение</p>
+            </div>
+          </div>
+          <div class="step right ">
+            <div class="">
+              <img src="../img/howWeWork/website.png" alt="">
+              <p>Откликнись на одно или несколько предложений</p>
+            </div>
+          </div>
+          <div class="step down">
+            <div class="">
+              <img src="../img/howWeWork/chrono.png" alt="">
+              <p>Жди подтверждение</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.steps-top -->
+        <div class="steps-bottom">
+          <div class="step empty">
+
+          </div>
+          <div class="step left right">
+            <div class="">
+              <img src="../img/howWeWork/Union.png" alt="">
+              <p>Создай совё предложение</p>
+            </div>
+          </div>
+          <div class="step large left right">
+            <div class="">
+              <img src="../img/howWeWork/accepted.png" alt="">
+              <p>Прими отклик от лучшего кандидата</p>
+            </div>
+          </div>
+          <div class="step end">
+            <div class="">
+              <img src="../img/howWeWork/verify.png" alt="">
+              <p>Готово!</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.steps-bottom -->
+      </div>
+    </div>
+  </section>
+
+  <section class="event grey">
+    <div class="container-main">
+      <h1 class="h1 text-center">
+        Предстоящие события
+      </h1>
+      <div class="swiper-container event">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide active">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event white">
+    <div class="container-main">
+      <h1 class="h1 text-center">
+        События сейчас
+      </h1>
+      <div class="swiper-container event">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide active">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/patrick-tomasso-GXXYkSwndP4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/taylor-davidson-iwWJFIlnDm4-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/ash-edmonds-LVygXSuJ40Y-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong> Cris Jegord</p>
+                <p><strong>Дата:</strong> 21.03.2021</p>
+                <p><strong>Группа:</strong> Ария</p>
+                <a href="">Подробнее <img src="../img/moreArrowDown.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="top">
+    <div class="container-main">
+      <h1 class="h1 text-center">
+        Лучшие бары
+      </h1>
+      <!-- Slider main container -->
+      <div class="swiper-container top">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/the-creative-exchange-d1ngW7SNehM-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/the-creative-exchange-d1ngW7SNehM-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/the-creative-exchange-d1ngW7SNehM-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/the-creative-exchange-d1ngW7SNehM-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/the-creative-exchange-d1ngW7SNehM-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <h1 class="h1 text-center">
+        Лучшие группы
+      </h1>
+      <!-- Slider main container -->
+      <div class="swiper-container top">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/clem-onojeghuo-fxt2d5Dqifk-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/clem-onojeghuo-fxt2d5Dqifk-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/clem-onojeghuo-fxt2d5Dqifk-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/clem-onojeghuo-fxt2d5Dqifk-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bar">
+              <div class="img">
+                <img src="../img/clem-onojeghuo-fxt2d5Dqifk-unsplash 1.png" alt="">
+              </div>
+              <div class="description">
+                <p><strong>Бар:</strong>Марсель</p>
+                <div class="stars">
+                  <span class="raiting">6.3</span>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="orange" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+                  <svg class="grey" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-main">
+      <div class="links">
+        <div>
+          <a href="#">
+            <div>Как работает pubs.ua</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Условия использования</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Вопросы и ответы</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Политика конфиденциальности</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>О нас</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div class="buttons">
+              <button class="nav-button">Связаться с нами</button>
+            </div>
+          </a>
+        </div>
+        <div class="select">
+          <select name="language" id="">
+            <option value="Русский">Русский</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+        <!-- /.select -->
+      </div>
+      <!-- /.links -->
+
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container.event', {
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 110
+        },
+
+        767.98: {
+          slidesPerView: 2,
+          spaceBetween: 110
+        },
+
+        1049.98: {
+          slidesPerView: 3,
+          spaceBetween: 110
+        },
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+    });
+
+    var swiper = new Swiper('.swiper-container.top', {
+      breakpoints: {
+        0: {
+          spaceBetween: 110,
+          slidesPerView: 1,
+        },
+
+        767.98: {
+          spaceBetween: 110,
+          slidesPerView: 2,
+        },
+
+        900: {
+          spaceBetween: 110,
+          slidesPerView: 3,
+        },
+
+        1099: {
+          spaceBetween: 50,
+          slidesPerView: 5,
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+    });
+
+  </script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

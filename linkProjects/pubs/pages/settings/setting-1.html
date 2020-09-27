@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/css/setting.css">
+  <title>!</title>
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="mob-menu">
+    <div class="close">
+      <button>
+        <img src="../../img/closeBut.png" alt="">
+      </button>
+    </div>
+    <div class="user-name">
+      <img src="../../img/userAvatar.png" alt="">
+      <p>Василей Васильев</p>
+    </div>
+
+    <div class="link enter"><a href="#">Профиль</a></div>
+    <div class="link register"><a href="#">Группа</a></div>
+    <div class="select">
+      <select name="language" id="">
+        <option value="Русский">Русский</option>
+        <option value="English">English</option>
+      </select>
+    </div>
+  </div>
+  <!-- /.mob-menu -->
+  <div class="nav-panel-mob">
+    <div class="logo">
+      <img src="../../img/free_horizontal_on_white_by_logaster-removebg-preview 23.png" alt="">
+    </div>
+    <div class="burger-button">
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <header>
+    <div class="container-main">
+
+
+
+      <div class="nav-panel">
+        <div class="logo">
+          <img src="../../img/free_horizontal_on_white_by_logaster-removebg-preview 23.png" alt="">
+        </div>
+        <!-- /.logo -->
+        <div class="right-panel">
+          <div class="search">
+            <label for="" class="search-label">
+              <input type="text" name="" id="search" autocomplete="off" placeholder="ПОИСК">
+              <div class="search-icon">
+                <img src="../../img/search-icon.png" alt="">
+              </div>
+              <!-- /.search-icon -->
+            </label>
+            <!-- /.search-label -->
+          </div>
+          <!-- /.search -->
+          <div class="buttons">
+            <button class="nav-button enter">Профиль</button>
+            <button class="nav-button register">Группа</button>
+          </div>
+          <!-- /.buttons -->
+          <div class="user-name">
+            <img src="../../img/userAvatar.png" alt="">
+            <p>Василей Васильев</p>
+          </div>
+        </div>
+        <!-- /.right-panel -->
+      </div>
+    </div>
+  </header>
+
+  <h1 class="h1 mob">
+    Настройки
+    <img src="../../img/howWeWork/title.png" alt="">
+  </h1>
+  <div class="sidebar-mob-block">
+    <div class="sidebar-mob">
+      <div class="sidebar-item">
+        <div class="sidebar-title">Настройки пользователя</div>
+        <ul class="sidebar-list">
+          <li class="active">Персональные данные</li>
+          <li class="">Изменение пароля</li>
+          <li class="">Удаление аккаунта</li>
+        </ul>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-title">Настройки группы</div>
+        <ul class="sidebar-list">
+          <li class="">Данные группы</li>
+          <li class="">Управление пользователями</li>
+          <li class="">Управление тегами</li>
+          <li class="">Удаление группы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header></header>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4 position-relative">
+
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <div class="sidebar-title">Настройки пользователя</div>
+            <ul class="sidebar-list">
+              <li class="active">Персональные данные</li>
+              <li class="">Изменение пароля</li>
+              <li class="">Удаление аккаунта</li>
+            </ul>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-title">Настройки группы</div>
+            <ul class="sidebar-list">
+              <li class="">Данные группы</li>
+              <li class="">Управление пользователями</li>
+              <li class="">Управление тегами</li>
+              <li class="">Удаление группы</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="settings-data">
+          <div class="setting-data-title">Персональные данные</div>
+          <div class="setting-data-block">
+            <form>
+              <div class="row align-items-end">
+                <div class="col-12 col-md-6">
+                  <div class="form-field">
+                    <label class="label" for="name">Имя</label>
+                    <span class="error-msg">Ошибка валидации</span>
+                    <input class="input" type="text" name="name" id="name" placeholder="Андрей" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-field">
+                    <label class="label" for="lastname">Фамилия</label>
+                    <span class="error-msg"></span>
+                    <input class="input" type="text" name="lastname" id="lastname" placeholder="Андреев" required>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-4 align-self-start">
+                  <div class="form-field ">
+                    <span class="label">Дата рождение</span>
+                    <div class="birthday">
+                      <select name="birthday-day" class="select-border">
+                        <option value="value1">1</option>
+                        <option value="value2">2</option>
+                        <option value="value3">3</option>
+                      </select>
+                      <select name="birthday-month" class="select-border">
+                        <option value="value1">Января</option>
+                        <option value="value2">Февраля</option>
+                        <option value="value3">Марта</option>
+                      </select>
+                      <select name="birthday-year">
+                        <option value="value1">1989</option>
+                        <option value="value2">1990</option>
+                        <option value="value3">1991</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-field">
+                    <span class="label">Выберите фото</span>
+                    <div class="preview-photo">Фото</div>
+                    <!--<img id="blah" src="#" alt="your image" />-->
+                    <input type="file" name="photo" id="photo" value="Выбрать">
+                  </div>
+                </div>
+              </div>
+              <div class="button-field">
+                <span class="button">Сохранить</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-main">
+      <div class="links">
+        <div>
+          <a href="#">
+            <div>Как работает pubs.ua</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Условия использования</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Вопросы и ответы</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>Политика конфиденциальности</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div>О нас</div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div class="buttons">
+              <button class="nav-button">Связаться с нами</button>
+            </div>
+          </a>
+        </div>
+        <div class="select">
+          <select name="language" id="">
+            <option value="Русский">Русский</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+        <!-- /.select -->
+      </div>
+      <!-- /.links -->
+
+    </div>
+  </footer>
+</body>
+
+<script>
+  document.querySelector('.h1.mob').addEventListener('click', () => {
+    document.querySelector('.sidebar-mob-block').classList.toggle('show')
+    document.querySelector('.h1.mob img').classList.toggle('rotate')
+    // document.querySelector('.settings-data').classList.toggle('hide')
+  })
+
+  const burgerButton = document.querySelector('.burger-button'),
+    mobMenu = document.querySelector('.mob-menu'),
+    closeMenu = document.querySelector('.mob-menu .close'),
+    mobEnter = document.querySelector('.mob-menu .link.enter'),
+    mobRegister = document.querySelector('.mob-menu .link.register')
+
+  burgerButton.addEventListener('click', () => {
+    mobMenu.classList.add('show')
+  })
+
+  closeMenu.addEventListener('click', () => {
+    mobMenu.classList.remove('show')
+  })
+
+  document.addEventListener('click', (e) => {
+    if (
+      !e.target.closest('.mob-menu.show')
+      &&
+      !e.target.closest('.burger-button')
+      &&
+      !e.target.closest('.modal')
+    ) {
+      mobMenu.classList.remove('show')
+    }
+  })
+</script>
+
+</html>

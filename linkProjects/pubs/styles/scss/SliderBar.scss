@@ -1,0 +1,131 @@
+.event {
+  .container-main {
+    overflow: hidden;
+  }
+}
+
+.event .swiper-slide {
+  .bar {
+    .img img {
+      width: 100%;
+    }
+
+    .description {
+      margin: 22px 29px 23px 28px;
+      position: relative;
+      padding-bottom: 5px;
+
+      strong {
+        margin-right: 9px;
+      }
+
+      a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin-right: 5px;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.event {
+  .swiper-container {
+    margin-top: 50px;
+    overflow: visible;
+  }
+  .swiper-wrapper {
+    padding-bottom: 30px;
+    // @media (max-width: 575.98px) {
+    //   width: 85%;
+    //   margin: auto;
+    // }
+  }
+  .swiper-slide {
+    width: auto;
+    background: #eeeeee;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+    // @media (max-width: 575.98px) {
+    //   width: 100% !important;
+    // }
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: -60px;
+    right: auto;
+    outline: none;
+    @media (max-width: 575.98px) {
+      left: 0;
+    }
+  }
+  .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after {
+    content: url(../../img/arrowSlider.png);
+  }
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: -60px;
+    left: auto;
+    outline: none;
+    @media (max-width: 575.98px) {
+      right: 0;
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    content: url(../../img/arrowSlider.png);
+    transform: rotate(-180deg);
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Common Styles */
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -2px;
+    left: 8%;
+    width: 84%;
+    @media (max-width: 575.98px) {
+      width: 70%;
+      left: 15%;
+    }
+  }
+  /* Bullets */
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+  }
+
+  .swiper-pagination-bullet {
+    border-radius: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 0;
+    height: 0;
+  }
+  .swiper-pagination-bullet-active {
+    width: 38px;
+    height: 15px;
+    background: #b1b0b0;
+  }
+  .swiper-scrollbar {
+    background-color: #b1b0b0;
+    @media (max-width: 575.98px) {
+      width: 70%;
+      left: 15%;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* Register modal*/
+/* Slider bullet STARS */
+.top .container-main {
+  overflow: hidden;
+}
+
+.top .swiper-slide .bar .img img {
+  width: 100%;
+}
+.top .swiper-slide .bar .description {
+  margin-top: 15px;
+  position: relative;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.top .swiper-slide .bar .description strong {
+  margin-right: 9px;
+}
+.top .swiper-slide .bar .description .stars {
+  text-align: right;
+  margin-right: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top .swiper-slide .bar .description .stars svg {
+  padding-right: 1px;
+}
+.top .swiper-slide .bar .description .stars svg.grey {
+  fill: #b1b0b0;
+}
+.top .swiper-slide .bar .description .stars svg.orange {
+  fill: #dca34d;
+}
+.top .swiper-slide .bar .description .stars span.raiting {
+  margin-right: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a9a9a9;
+}
+
+.top {
+  /* Common Styles */
+  /* Bullets */
+}
+.top .swiper-container {
+  overflow: visible;
+  margin-top: 50px;
+}
+.top .swiper-wrapper {
+  padding-bottom: 30px;
+}
+.top .swiper-slide {
+  width: auto;
+  background: #eeeeee;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+}
+.top .swiper-button-prev,
+.top .swiper-container-rtl .swiper-button-next {
+  left: -60px;
+  right: auto;
+  display: none;
+}
+@media (max-width: 1099px) {
+  .top .swiper-button-prev,
+.top .swiper-container-rtl .swiper-button-next {
+    display: flex;
+  }
+}
+@media (max-width: 575.98px) {
+  .top .swiper-button-prev,
+.top .swiper-container-rtl .swiper-button-next {
+    left: 0;
+  }
+}
+.top .swiper-button-prev:after,
+.top .swiper-container-rtl .swiper-button-next:after {
+  content: url(../../img/arrowSlider.png);
+}
+.top .swiper-button-next,
+.top .swiper-container-rtl .swiper-button-prev {
+  right: -60px;
+  left: auto;
+  display: none;
+}
+@media (max-width: 1099px) {
+  .top .swiper-button-next,
+.top .swiper-container-rtl .swiper-button-prev {
+    display: flex;
+  }
+}
+@media (max-width: 575.98px) {
+  .top .swiper-button-next,
+.top .swiper-container-rtl .swiper-button-prev {
+    right: 0;
+  }
+}
+.top .swiper-button-next:after,
+.top .swiper-container-rtl .swiper-button-prev:after {
+  content: url(../../img/arrowSlider.png);
+  transform: rotate(180deg);
+}
+.top .swiper-pagination {
+  display: flex;
+  justify-content: space-around;
+  display: none;
+}
+@media (max-width: 1098.98px) {
+  .top .swiper-pagination {
+    display: flex;
+  }
+}
+.top .swiper-pagination-fraction,
+.top .swiper-pagination-custom,
+.top .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2px;
+  left: 8%;
+  width: 84%;
+}
+.top .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.top .swiper-pagination-bullet {
+  border-radius: 0;
+}
+.top .swiper-pagination-bullet {
+  width: 0;
+  height: 0;
+}
+.top .swiper-pagination-bullet-active {
+  width: 38px;
+  height: 15px;
+  background: #b1b0b0;
+}
+.top .swiper-scrollbar {
+  background-color: #b1b0b0;
+  display: none;
+}
+@media (max-width: 1098.98px) {
+  .top .swiper-scrollbar {
+    display: block;
+  }
+}

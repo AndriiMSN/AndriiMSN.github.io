@@ -5,6 +5,13 @@
   margin: 0 auto;
   background-color: $bg;
   color: $color;
+  h1 {
+    background: #fff;
+    color: black;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+  }
   .myModal {
     cursor: zoom-in;
   }
@@ -48,6 +55,9 @@
 .list-group-item {
   width: max-content;
   font-size: 1rem;
+  color: #fff;
+  border: 2px solid white;
+  background: $darksalt;
   @media (max-width: 991.98px) {
     min-width: 25%;
     max-width: 25%;
@@ -61,7 +71,8 @@
 }
 
 .list-group-item.active {
-  background: $darksalt;
+  color: #000000;
+  background: orange;
   @media (max-width: 991.98px) {
     margin: 0;
   }
@@ -111,7 +122,7 @@ body > div.column.container > div.row.container {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border: 2px solid $color;
-    padding: 20px 40px;
+    padding: 10px 20px;
     background-color: rgb(0, 0, 0, 0.9);
     @media (max-width: 575.98px) {
       padding: 15px;
@@ -124,8 +135,10 @@ body > div.column.container > div.row.container {
       text-transform: uppercase;
       font-weight: bolder;
       letter-spacing: 5px;
-      @media (max-width: 575.98px) {
-        font-size: 1rem;
+      @media (max-width: 767.98px) {
+        font-size: 12px;
+        text-shadow: none;
+        margin-bottom: 0;
       }
     }
   }

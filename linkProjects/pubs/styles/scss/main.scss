@@ -1,0 +1,316 @@
+@import "./theme.scss";
+
+.main_block {
+  margin: auto;
+  background-image: url(../../img/john-matychuk.png);
+  background-size: cover;
+
+  .bg-opacity {
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .text-content {
+    padding-top: 195px;
+    padding-bottom: 253px;
+    max-width: 500px;
+    color: $white;
+    @media (max-width: 575.98px) {
+      padding: 40px 8px 20px 8px;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      .h1.desktop {
+        display: none;
+      }
+    }
+
+    .h1.mobile {
+      display: none;
+      @media (max-width: 575.98px) {
+        display: block;
+      }
+    }
+
+    .text {
+      margin-top: 18px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 33px;
+      @media (max-width: 575.98px) {
+        flex-direction: column;
+        max-width: 220px;
+        margin: auto;
+
+        .button-fill {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.second-block {
+  background-color: $white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: 1049.98px) {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 15px;
+      display: none;
+      @media (max-width: 1049.98px) {
+        display: block;
+        &.transform {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .steps-block {
+    display: block;
+    @media (max-width: 1049.98px) {
+      display: none;
+      &.show {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .step {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    position: relative;
+    @media (max-width: 1367.98px) {
+      font-size: 10px;
+    }
+    @media (max-width: 1049.98px) {
+      -ms-flex: none;
+      flex: none;
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+    div {
+      width: 159px;
+      height: 159px;
+      margin: auto;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1367.98px) {
+        width: 125px;
+        height: 125px;
+      }
+
+      p {
+        margin-top: 12px;
+        text-align: center;
+        width: 90%;
+      }
+    }
+  }
+
+  .steps-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+    @media (max-width: 1049.98px) {
+      width: 50%;
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step {
+      &.start div {
+        border: 1px solid $yellow;
+        color: $yellow;
+      }
+
+      &.down::before {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: calc(100% + 39px);
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        @media (max-width: 1049.98px) {
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+      }
+      &.right::after {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-40%, -50%);
+        @media (max-width: 1049.98px) {
+          top: calc(100% + 30px);
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .steps-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 78px;
+    width: 100%;
+    margin-left: auto;
+    @media (max-width: 1049.98px) {
+      margin-top: 0;
+      width: 50%;
+      flex-direction: column;
+    }
+
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step {
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 100%;
+      @media (max-width: 1049.98px) {
+        -ms-flex: 0 0 calc(20% - 60px);
+        flex: 0 0 calc(20% - 60px);
+        max-width: 100%;
+      }
+      &.end div {
+        border: 1px solid $green-border;
+        color: $green-border;
+      }
+      &.empty {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        @media (max-width: 1049.98px) {
+          -ms-flex: 0 0 calc(20% - 60px);
+          flex: 0 0 calc(20% - 60px);
+          max-width: 100%;
+        }
+      }
+      &.large {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+        @media (max-width: 1049.98px) {
+          -ms-flex: 0 0 calc(40% - 60px);
+          flex: 0 0 calc(40% - 60px);
+          max-width: 100%;
+          display: flex;
+        }
+      }
+    }
+
+    .step {
+      &.left::before {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 1049.98px) {
+          top: calc(100% + 30px);
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+      &.right::after {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: 50%;
+        left: 150%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 1049.98px) {
+          top: calc(150% + 50px);
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+
+      &.large.left::before {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 1049.98px) {
+          top: calc(100% + 30px);
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+      &.large.right::after {
+        content: url(../../img/how_arrow.png);
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 1049.98px) {
+          top: calc(75% + 30px);
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+.event.grey {
+  background-color: $grey;
+  padding-bottom: 30px;
+  h1 {
+    padding-top: 33px;
+  }
+}
+
+.event.white {
+  padding-bottom: 100px;
+  h1 {
+    padding-top: 100px;
+  }
+}
+
+.top {
+  background-color: $grey;
+  padding-bottom: 30px;
+
+  h1 {
+    padding-top: 33px;
+  }
+}

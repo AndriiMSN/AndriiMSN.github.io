@@ -1,0 +1,50 @@
+@import "../../styles/scss/theme.scss";
+
+.nav-panel-mob {
+  display: flex;
+  @media (min-width: 767.98px) {
+    display: none;
+  }
+}
+
+header {
+  background-color: $brown;
+
+  .nav-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    height: 52px;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    .search {
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .user-name {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0px 0px;
+      padding-left: 35px;
+
+      p {
+        margin-left: 12px;
+      }
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}

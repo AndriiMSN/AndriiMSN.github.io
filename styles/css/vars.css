@@ -1,0 +1,108 @@
+body {
+  background: url("../../img/bg.jpg") fixed;
+  background-size: cover;
+  padding: 0 !important;
+  margin-left: 70px;
+}
+@media (max-width: 575.98px) {
+  body {
+    margin-left: 0;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.modal-open {
+  overflow: scroll;
+  padding: 0 !important;
+}
+
+.modal-backdrop.show {
+  display: none;
+}
+
+.modal-lg,
+.modal-xl {
+  max-width: 95%;
+  cursor: auto;
+}
+
+.modal-open .modal {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: zoom-out;
+}
+
+.btn-block {
+  position: relative;
+  display: block;
+  z-index: 10;
+}
+
+.arrow {
+  background-color: orangered;
+  border-radius: 95%;
+  color: #ffffff;
+  border: none;
+  font-size: 40px;
+  display: block;
+  margin: auto;
+  margin-top: -25px;
+  animation: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@media (max-width: 767.98px) {
+  .arrow {
+    font-size: 25px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: scale(1);
+  }
+  49% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.arrow button {
+  background-color: transparent;
+}
+
+.arrow-port {
+  z-index: 10;
+  right: -30px;
+}
+
+.holding-img-title {
+  width: 80% !important;
+}
+@media (max-width: 991.98px) {
+  .holding-img-title {
+    width: 70% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .holding-img-title {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../styles/css/modal.css" rel="stylesheet">
+  <title>!</title>
+  <meta name="description" content="">
+</head>
+
+<body>
+  <header class="header-second"><span class="header-second-title">Регистрация</span></header>
+  <div class="progress-bar w-66"></div>
+  <div class="container container--narrow">
+    <form>
+      <div class="row align-items-end">
+        <div class="col-12 col-md-6">
+          <div class="form-field">
+            <label class="label" for="name">Имя</label>
+            <span class="error-msg">Ошибка валидации</span>
+            <input class="input" type="text" name="name" id="name" placeholder="Андрей" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-field">
+            <label class="label" for="lastname">Фамилия</label>
+            <span class="error-msg"></span>
+            <input class="input" type="text" name="lastname" id="lastname" placeholder="Андреев" required>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <span class="label">Дата рождение</span>
+            <div class="birthday">
+              <select name="birthday-day" class="select-border">
+                <option value="value1">1</option>
+                <option value="value2">2</option>
+                <option value="value3">3</option>
+              </select>
+              <select name="birthday-month" class="select-border">
+                <option value="value1">Января</option>
+                <option value="value2">Февраля</option>
+                <option value="value3">Марта</option>
+              </select>
+              <select name="birthday-year">
+                <option value="value1">1989</option>
+                <option value="value2">1990</option>
+                <option value="value3">1991</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <span class="label">Выберите фото</span>
+            <div class="preview-photo">Фото</div>
+            <!--<img id="blah" src="#" alt="your image" />-->
+            <input type="file" name="photo" id="photo" value="Выбрать">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field mb-0">
+            <div>
+              <input class="checkbox" type="checkbox" id="agree" name="agree"><label for="agree">Согласен с правилами
+                пользования</label></div>
+            <div><input class="checkbox" type="checkbox" id="add-group-bar" name="add-group-bar"><label
+                for="add-group-bar">Создать
+                также группу для бара или музыкальную группу.</label></div>
+          </div>
+        </div>
+      </div>
+      <div class="button-field">
+        <span class="button">Создать пользователя</span>
+      </div>
+      <div class="button-field">
+        <span class="button">Отмена</span>
+      </div>
+    </form>
+  </div>
+  <script src="../js/addImage.js"></script>
+</body>
+
+</html>

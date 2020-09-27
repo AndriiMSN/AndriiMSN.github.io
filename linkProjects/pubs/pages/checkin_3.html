@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../styles/css/modal.css" rel="stylesheet">
+  <title>!</title>
+  <meta name="description" content="">
+</head>
+
+<body>
+  <header class="header-second"><span class="header-second-title">Регистрация</span></header>
+  <div class="progress-bar w-100"></div>
+  <div class="container container--narrow">
+
+    <div class="row align-items-end">
+      <div class="col-12 col-md-6">
+        <div class="select-check">
+          <span>Группа для бара</span>
+          <span class="active">Музыкальная группа</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-field">
+          <label class="label" for="name-group">Названия</label>
+          <span class="error-msg">Ошибка валидации</span>
+          <input class="input" type="text" name="name-group" id="name-group" placeholder="Названия группы\бара"
+            required>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-field">
+          <span class="label">Описание</span>
+          <span class="error-msg"></span>
+          <textarea placeholder="Опишите группу\бар"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col-12">
+        <div class="form-field">
+          <div class="place">
+            <div class="d-inline-block mr-2">
+              <span class="label">Страна</span>
+              <select class="select-background" name="place-country">
+                <option value="value1">Украина</option>
+                <option value="value2">Молдова</option>
+                <option value="value3">Польша</option>
+              </select>
+            </div>
+            <div class="d-inline-block">
+              <span class="label">Город</span>
+              <select class="select-background" name="place-city">
+                <option value="value1">Львов</option>
+                <option value="value2">Киев</option>
+                <option value="value3">Харьков</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-field">
+          <label class="label" for="name-group">Номер дома, квартиры</label>
+          <span class="error-msg">Ошибка валидации</span>
+          <input class="input" type="text" name="number-house" id="number-house" placeholder="Укажите номер">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-field">
+          <label class="label" for="name-group">Улица</label>
+          <span class="error-msg">Ошибка валидации</span>
+          <input class="input" type="text" name="name-street" id="name-street" placeholder="Названия улицы">
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col-12">
+        <div class="form-field">
+          <span class="label">Выберите фото</span>
+          <div class="preview-photo">Фото</div>
+          <!--<img id="blah" src="#" alt="your image" />-->
+          <input type="file" name="photo" id="photo" value="Выбрать">
+        </div>
+      </div>
+    </div>
+    <div class="button-field">
+      <span class="button">Создать группу</span></div>
+    <div class="button-field">
+      <span class="button">Перейти в мой профиль</span></div>
+    </form>
+  </div>
+  <script src="../js/addImage.js"></script>
+</body>
+
+</html>
