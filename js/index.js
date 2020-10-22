@@ -37,7 +37,8 @@ $(document).ready(function () {
   Circle("#circle4", 0.76);
   Circle("#circle5", 0.94);
   Circle("#circle6", 0.42);
-  Circle("#circle7", 0.61);
+  Circle("#circle7", 0.3);
+  Circle("#circle8", 0.35);
 });
 
 $(window).scroll(function () {
@@ -52,7 +53,8 @@ $(window).scroll(function () {
     Circle("#circle4", 0.76);
     Circle("#circle5", 0.94);
     Circle("#circle6", 0.42);
-    Circle("#circle7", 0.61);
+    Circle("#circle7", 0.3);
+    Circle("#circle8", 0.35);
   }
 });
 

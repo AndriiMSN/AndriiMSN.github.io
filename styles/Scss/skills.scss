@@ -8,7 +8,7 @@
   font-size: 30px;
   @media (max-width: 991.98px) {
     img {
-      width: 102px;
+      width: 76px !important;
     }
   }
 
@@ -21,13 +21,18 @@
   .html {
     position: relative;
     background-color: $bg;
-
+    p {
+      img {
+        width: 126px;
+      }
+    }
     @media (max-width: 991.98px) {
       display: flex;
       justify-content: center;
       border-right: 1px dotted white;
       &:nth-child(3),
-      &:nth-child(6) {
+      &:nth-child(6),
+      &:nth-child(9) {
         border-right: none;
       }
     }
@@ -52,7 +57,8 @@
     #circle4,
     #circle5,
     #circle6,
-    #circle7 {
+    #circle7,
+    #circle8 {
       position: relative;
       margin-left: 25px;
       margin-top: -30px;
@@ -67,11 +73,10 @@
         border-bottom: none;
       }
     }
-    #circle3,
-    #circle4,
-    #circle5,
+
     #circle6,
-    #circle7 {
+    #circle7,
+    #circle8 {
       @media (max-width: 991.98px) {
         border-bottom: none;
       }
@@ -91,11 +96,12 @@
         transform: translate(-48%, -53%);
       }
     }
-    #circle6,
-    #circle7 {
-      .circle-text {
-        transform: translate(-50%, -44%);
-      }
-    }
+    // #circle6,
+    // #circle7,
+    // #circle8 {
+    //   .circle-text {
+    //     transform: translate(-50%, -44%);
+    //   }
+    // }
   }
 }

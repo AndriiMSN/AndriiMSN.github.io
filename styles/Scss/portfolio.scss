@@ -30,8 +30,7 @@
   }
   h1 {
     width: 100%;
-    background: rgb(107, 41, 41);
-    color: black;
+    color: grey;
     margin: auto;
     padding: 10px 20px;
   }
@@ -39,7 +38,7 @@
     cursor: zoom-in;
   }
   .container {
-    max-height: 670px;
+    max-height: fit-content;
     overflow-y: hidden;
     padding: 0;
   }
