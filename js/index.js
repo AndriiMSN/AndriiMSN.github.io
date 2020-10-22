@@ -145,14 +145,16 @@ function time() {
   document.getElementById("s").innerHTML = timesec;
   window.setTimeout("time()", 10);
 }
-setInterval(time(), 10)
+setInterval(time(), 10);
 
 function change(id, num, text1, text2, text3, text4) {
   var x = document.querySelector(id).innerText;
   var str = String(x);
   var q = str[str.length - 1];
   var i = str[str.length - 2];
-  var y = document.querySelector('div.reverse > div:nth-child(' + num + ') > p');
+  var y = document.querySelector(
+    "div.reverse > div:nth-child(" + num + ") > p"
+  );
   if (q == "1") {
     y.innerText = `${text1}`;
   } else if (q == "2" || q == "3" || q == "4") {
@@ -171,7 +173,7 @@ $(document).ready(function changeText() {
   }, 10);
   //КОД СОКРАЩЕН -- ПЕРЕНЕСТИ В ОСТАЛЬНЫЕ!!!
   window.setInterval(function textDay() {
-    change("#d", 1, "день", "дня", "дней", "дней")
+    change("#d", 1, "день", "дня", "дней", "дней");
   }, 10);
 
   window.setInterval(function textMinut() {
@@ -183,49 +185,52 @@ $(document).ready(function changeText() {
   }, 10);
 });
 
-const mMenu = document.querySelector('.m-menu'),
-  social = document.querySelector('.social');
-mMenu.addEventListener('click', () => {
-  social.classList.toggle('active');
-  mMenu.classList.toggle('active');
-})
-document.addEventListener('click', (event) => {
+const mMenu = document.querySelector(".m-menu"),
+  social = document.querySelector(".social");
+mMenu.addEventListener("click", () => {
+  social.classList.toggle("active");
+  mMenu.classList.toggle("active");
+});
+document.addEventListener("click", (event) => {
   if (!event.target.closest(".social")) {
-
     mMenu.classList.remove("active");
     social.classList.remove("active");
   }
 });
-$('a[data-modal]').click(function (event) {
+$("a[data-modal]").click(function (event) {
   $(this).modal({
-    fadeDuration: 100
+    fadeDuration: 100,
   });
-  if ($(this).find('img')) {
-    $img = $(this).find('img');
-    $($(this).attr('href')).find('img').attr('src', $img.attr('src'));
-    $(this).find('img') = $img;
+  if ($(this).find("img")) {
+    $img = $(this).find("img");
+    $($(this).attr("href")).find("img").attr("src", $img.attr("src"));
+    $(this).find("img") = $img;
   } else {
     return false;
   }
 });
 
+var nav = $(".arrow");
 
-
-
-var nav = $('.arrow');
-
-
-$(nav).on('click', function (e) {
-  e.preventDefault(); var wh = window.innerHeight; var x = $(this).offset().top
-  $('html, body').animate({
-    scrollTop: x + 20
-  }, 1000);
+$(nav).on("click", function (e) {
+  e.preventDefault();
+  var wh = window.innerHeight;
+  var x = $(this).offset().top;
+  $("html, body").animate(
+    {
+      scrollTop: x + 20,
+    },
+    1000
+  );
 });
 
-var $page = $('html, body');
+var $page = $("html, body");
 $('header a[href*="#"]').click(function () {
-  $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top - 75
-  }, 900);
+  $page.animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top - 75,
+    },
+    900
+  );
   return false;
 });

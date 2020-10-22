@@ -5,10 +5,33 @@
   margin: 0 auto;
   background-color: $bg;
   color: $color;
+  .github {
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 105px);
+      top: 50%;
+      transform: translate(0, -50%);
+
+      background-image: url(../../img/GitHub-Mark.png);
+      width: 36px;
+      height: 36px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
   h1 {
-    background: #fff;
+    width: 100%;
+    background: rgb(107, 41, 41);
     color: black;
-    width: fit-content;
     margin: auto;
     padding: 10px 20px;
   }
@@ -16,7 +39,7 @@
     cursor: zoom-in;
   }
   .container {
-    max-height: 600px;
+    max-height: 670px;
     overflow-y: hidden;
     padding: 0;
   }
@@ -110,6 +133,14 @@ body > div.column.container > div.row.container {
 }
 
 .holding {
+  div {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .holding-img-title {
     -webkit-filter: blur(16.5px);
     filter: blur(1.5px);
