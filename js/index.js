@@ -6,15 +6,15 @@ $(".container-check input:radio").click(function () {
 });
 
 //Запуск Счетчика
-$(document).ready(function () {
-  let length = document.querySelectorAll(".html span"); // Получаем к-во элементов
-  a = 0; // Ставим на 0 первое значение
-  for (var i in length) {
-    // Для каждого значения length
-    a++; // увеличиваем значение на 1 с каждой итерацией
-    MyCount(a); // запскаем функцию с параметром
-  }
-});
+// $(document).ready(function () {
+//   let length = document.querySelectorAll(".html span"); // Получаем к-во элементов
+//   a = 0; // Ставим на 0 первое значение
+//   for (var i in length) {
+//     // Для каждого значения length
+//     a++; // увеличиваем значение на 1 с каждой итерацией
+//     MyCount(a); // запскаем функцию с параметром
+//   }
+// });
 
 /*Счетчик */
 
@@ -58,56 +58,56 @@ $(window).scroll(function () {
   }
 });
 
-/*MAIN */
-function MyCount(a) {
-  //console.log("Элемент по счету - " + a); // Выводим в кконсоль элемент по счету
-  var txt = parseInt(
-    document.querySelector(".html:nth-child(" + a + ")  span").innerText
-  );
-  //console.log("Числовое знчение - " + txt); //Выводим в консоль числовое значение элемента
-  let blockTop = $(".html.row").offset().top, // Получаем отступ блока
-    wh = window.innerHeight, // Высота видимой части
-    flag = true, // Флаг активации
-    counter = (_) => {
-      if (counter._count > txt) {
-        // Если счёт дошёл до нужного, то
-        $(".html:nth-child(" + a + ")  span").text(txt); // Сбросим
-        flag = !flag; // Всё
-        return; // И выходим
-      }
+// /*MAIN */
+// function MyCount(a) {
+//   //console.log("Элемент по счету - " + a); // Выводим в кконсоль элемент по счету
+//   var txt = parseInt(
+//     document.querySelector(".html:nth-child(" + a + ")  span").innerText
+//   );
+//   //console.log("Числовое знчение - " + txt); //Выводим в консоль числовое значение элемента
+//   let blockTop = $(".html.row").offset().top, // Получаем отступ блока
+//     wh = window.innerHeight, // Высота видимой части
+//     flag = true, // Флаг активации
+//     counter = (_) => {
+//       if (counter._count > txt) {
+//         // Если счёт дошёл до нужного, то
+//         $(".html:nth-child(" + a + ")  span").text(txt); // Сбросим
+//         flag = !flag; // Всё
+//         return; // И выходим
+//       }
 
-      $(".html:nth-child(" + a + ")  span").text(counter._count++); // Иначе делаем что нужно
+//       $(".html:nth-child(" + a + ")  span").text(counter._count++); // Иначе делаем что нужно
 
-      setTimeout(counter, 15); // И ставим таймер на следующую итерацию
-    };
-  counter._count = 0; // Обнуляем значение при загрузке
-  $(document).ready((_) => {
-    // и запускаем счетчик
-    flag = !flag;
-    counter();
-  });
-  $(window).scroll((_) => {
-    x = $(window).scrollTop();
-    // Слушаем скролл окна
-    /*if ($(window).width() < "767.98") {} else {
-      if (flag && blockTop < x + wh / 5 && blockTop > x + (wh / 5 - 30)) {
-        
-        // Если флаг позволяет запустить таймер и скролл дошёл
-        flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
-        counter._count = 0;
-        counter(); // Запускаем что надо
-      }
-    } */
-    if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 30)) {
-      // Если флаг позволяет запустить таймер и скролл дошёл
-      flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
-      counter._count = 0;
-      counter(); // Запускаем что надо
-    }
-    //console.log("blockTOP  " + blockTop);
-    //console.log("2- " + x + wh / 2 + "\n3- " + x + (wh / 2 - 10));
-  });
-}
+//       setTimeout(counter, 15); // И ставим таймер на следующую итерацию
+//     };
+//   counter._count = 0; // Обнуляем значение при загрузке
+//   $(document).ready((_) => {
+//     // и запускаем счетчик
+//     flag = !flag;
+//     counter();
+//   });
+//   $(window).scroll((_) => {
+//     x = $(window).scrollTop();
+//     // Слушаем скролл окна
+//     /*if ($(window).width() < "767.98") {} else {
+//       if (flag && blockTop < x + wh / 5 && blockTop > x + (wh / 5 - 30)) {
+
+//         // Если флаг позволяет запустить таймер и скролл дошёл
+//         flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
+//         counter._count = 0;
+//         counter(); // Запускаем что надо
+//       }
+//     } */
+//     if (flag && blockTop < x + wh / 2 && blockTop > x + (wh / 2 - 30)) {
+//       // Если флаг позволяет запустить таймер и скролл дошёл
+//       flag = !flag; // Меняем доступность флага (чтобы каждый раз не запускался счётчик и не навешал сотню таймеров)
+//       counter._count = 0;
+//       counter(); // Запускаем что надо
+//     }
+//     //console.log("blockTOP  " + blockTop);
+//     //console.log("2- " + x + wh / 2 + "\n3- " + x + (wh / 2 - 10));
+//   });
+// }
 
 /*TIMER */
 timeend = new Date();
